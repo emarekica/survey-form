@@ -1,32 +1,10 @@
-# TRIBUTE PAGE PROJECT
+# EXERCISE
 
-This project is part of series of projects from Free Code Camp's [**Responsive Web Design Certification Course**](https://www.freecodecamp.org/learn/responsive-web-design/).
-<br>
-
-It is made using:
-
-- HTML5
-- CSS3
-- CSS flex-box
-- CSS flex-grid
-- Responsive web design principles
-- Applied accessibility
-- Applied visual design
-
-<br>
-<br>
-
-## Mockup
-
----
-
-[See the page]().
-<br>
-<br>
-
----
+<br><br>
 
 ## Make Survey Form
+
+<br>
 
 **Objective**: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/VPaoNP.
 
@@ -75,13 +53,3 @@ You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is rec
 ---
 
 You can build your project by using this CodePen template and clicking Save to create your own pen. Or you can use this CDN link to run the tests in any environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
-<br>
-<br>
-
----
-
-inspo:
-
-- [modern](https://www.uidesigndaily.com/posts/studio-form-input-dark-theme-day-1432)
-- [retro](https://www.behance.net/gallery/100413829/The-Library-Card-Project?tracking_source=search_projects_recommended%7Cretro%20paper)
-- [backgrounds](https://www.behance.net/gallery/11095429/Retro-Backgrounds?tracking_source=search_projects_recommended%7Cretro%20paper)
