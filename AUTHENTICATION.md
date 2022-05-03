@@ -30,13 +30,53 @@ When you enter data, the browser and/or the web server will check to see that th
 
 <br><br>
 
+HTML5 form controls validate most user data without relying on JavaScript. This is done by using validation attributes on form elements.
+
+- required
+- min/max length
+- min/max
+- type
+- pattern
+- step
+  <br>
+
+[Validation related attributes](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Constraint_validation#validation-related_attributes)
+
 <br>
+
+**Valid element**:
+
+- matches the `:valid` CSS pseudo-class, which lets you apply a specific style
+- if the user tries to send the data, the browser will submit the form, provided there is nothing else stopping it from doing so
+
+<br>
+
+**Invalid element**:
+
+- matches the `:invalid` CSS pseudo-class, which lets you apply a specific style to invalid elements
+- if the user tries to send the data, the browser will block the form and display an error message
+
+<br><br>
+
+**Good practice**:
+
+Indicate to the user when form fields are required (required by WCAG accessibility guidelines).
+
+Only require users to input data you actually need.
+
+**Character count feedback**:
+
+Inn an accessible manner and let them edit their content down to size.
+An example of this is the character limit seen on Twitter when tweeting. JavaScript, including [solutions using maxlength](https://github.com/mimo84/bootstrap-maxlength), can be used to provide this.
+
+<br><br>
 
 1: **Built-in HTML form validation**
 <br>
 
 - has better performance than JS
 - not as customizable as JS validation
+- browser-automated error message
   <br><br>
 
 - [MDN Client side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
@@ -51,8 +91,34 @@ When you enter data, the browser and/or the web server will check to see that th
 
 <br><br>
 
+`:invalid`
+
+Can be “chained” with other pseudo-selectors: like `:focus` to only validate when the user is typing, `:before` or :after to generate icons or text to provide more user feedback, or attribute selectors like `input[value=""]` to only validate input fields containing content.
+
+<br><br>
+
 2: **JS form validation**
 <br>
+
+- control over the look and feel of native error messages
+- to deal with legacy browsers that do not support HTML's built-in form validation
+  <br>
+
+[Constraint validation API](https://developer.mozilla.org/en-US/docs/Web/API/Constraint_validation)
+
+- `HTMLButtonElement` (represents a <button> element)
+
+- `HTMLFieldSetElement` (represents a <fieldset> element)
+
+- `HTMLInputElement` (represents an <input> element)
+
+- `HTMLOutputElement` (represents an <output> element)
+
+- `HTMLSelectElement` (represents a <select> element)
+
+- `HTMLTextAreaElement` (represents a <textarea> element)
+
+<br><br>
 
 - [W3Schools JS form validation](https://www.w3schools.com/js/js_validation.asp)
 
@@ -84,13 +150,15 @@ When you enter data, the browser and/or the web server will check to see that th
 
 - [Input validation - min/max length](https://riptutorial.com/html/example/2259/input-validation)
 
-<br><br>
-
-- [<form>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
-
-- []()
-
 <br>
+
+- [`<form>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
+
+-[`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+
+- [The HTML5 input types (form controls)](https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types)
+
+<br><br>
 
 ---
 
@@ -139,5 +207,3 @@ VALIDATION vs AUTHENTICATION
 - [YT: Privatnost i podaci o korisniku](https://www.youtube.com/watch?v=CqwdewDb9g8&list=PLmGRn_VnTuAxIHKjfgoOEOIk72PeZdbaB&index=100)
 
 - [YT: User password authentication (Node.js + Express)](https://www.youtube.com/watch?v=Nlg0JrUt0qg&list=PLmGRn_VnTuAxIHKjfgoOEOIk72PeZdbaB&index=67)
-
-<br><br>
