@@ -53,3 +53,13 @@ You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is rec
 ---
 
 You can build your project by using this CodePen template and clicking Save to create your own pen. Or you can use this CDN link to run the tests in any environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
+
+<br><br>
+
+---
+
+## Additions
+
+[] Upload a file
+
+[] [Limit the size of file upload](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Constraint_validation#limiting_the_size_of_a_file_before_its_upload)
