@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Elements Presentation</title>
+  </head>
+
+  <body>
+    <header>
+      <p>Input</p>
+      <h1>Types</h1>
+    </header>
+    <br />
+
+    <main>
+      <form>
+        <!-- NAME -->
+        <label for="full-name">Full name</label>
+        <input type="text" id="full-name" placeholder="Jane Doe" required />
+
+        <h2>Text input</h2>
+        <br /><br />
+
+        <!-- E-MAIL -->
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          id="email"
+          pattern=".+@globex\.com"
+          size="30"
+          placeholder="Please, type in your password"
+          required
+        />
+        <h2>E-mail with one input</h2>
+        <br />
+
+        <label for="emails">Who do you want to email?</label>
+        <input
+          type="email"
+          name="emails"
+          id="emails"
+          name="emails"
+          pattern=".+@globex\.com"
+          placeholder="Click to see your favourite emails list"
+          list="favouriteEmails"
+          size="100"
+        />
+
+        <datalist id="favouriteEmails">
+          <option value="madre@mail.com">Madre</option>
+          <option value="padre@mail.com">Padre</option>
+          <option value="hermana@mail.com">Hermana</option>
+          <option value="abuela@mail.com">Abuela</option>
+          <option value="novio@mail.com">Novio</option>
+        </datalist>
+        <h2>E-mail with multiple inputs</h2>
+        <br />
+
+        <!-- scrol with multiple  -->
+        <label></label>
+        <select multiple name="drawfs" id="drawfs">
+          <option>Madre</option>
+          <option>Padre</option>
+          <option>Hermana</option>
+          <option>Abuela</option>
+          <option>Novio</option>
+        </select>
+        <h2>Scroll with one selection</h2>
+        <br /><br />
+
+        <!-- PASSWORD -->
+        <label for="pass">Password:</label>
+        <input
+          type="password"
+          id="pass"
+          name="password"
+          minlength="8"
+          maxlength="20"
+          placeholder="Please, enter your password"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
+          required
+        />
+
+        <h2>Password</h2>
+        <br /><br />
+
+        <!-- search field -->
+        <label></label>
+        <input />
+        <br />
+
+        <h2>Search field</h2>
+        <br /><br />
+
+        <!-- text area -->
+        <!-- inputs with floating labels -->
+        <!-- inputs with top-aligned labels -->
+        <label></label>
+        <input />
+        <br />
+
+        <h2>Text area</h2>
+        <br /><br />
+
+        <!-- date picker -->
+        <label></label>
+        <input />
+        <br />
+
+        <h2>Date picker</h2>
+        <br /><br />
+
+        <!-- time picker -->
+        <label></label>
+        <input />
+        <br />
+
+        <h2>Time picker</h2>
+        <br /><br />
+
+        <!-- drop-down -->
+        <label for="dropdown"></label>
+        <select id="dropdown">
+          <option value="">--Select your prefered option---</option>
+          <option value="spring">spring</option>
+          <option value="summer">summer</option>
+          <option value="autumn">autumn</option>
+          <option value="winter">winter</option>
+        </select>
+        <br />
+
+        <h2>Drop-down menu</h2>
+        <br /><br />
+
+        <!-- phone number field -->
+        <label></label>
+        <input />
+        <br />
+
+        <h2>Phone number</h2>
+        <br /><br />
+
+        <!-- multi-select input -->
+        <label></label>
+        <input />
+        <br />
+
+        <h2>Multi-select input</h2>
+        <br /><br />
+
+        <!-- input with stepper -->
+        <label></label>
+        <input />
+        <br />
+
+        <h2>Input with stepper</h2>
+        <br /><br />
+
+        <!-- number input -->
+        <!-- min/max -->
+        <label for="age" id="number-label">Age(optional):</label>
+        <input
+          type="number"
+          id="age"
+          min="1"
+          max="120"
+          name="age"
+          placeholder="Please, write a number."
+        />
+        <br />
+
+        <h2>Number min/max</h2>
+        <br /><br />
+
+        <!-- radio-button -->
+        <fieldset id="radio">
+          <legend>Select your favourite</legend>
+          <input />
+        </fieldset>
+        <br />
+
+        <h2>Radio button</h2>
+        <br /><br />
+
+        <!-- check-box -->
+        <label></label>
+        <input />
+        <br />
+
+        <h2>Check-box</h2>
+        <br /><br />
+
+        <!-- color selector -->
+        <label>Select your theme</label>
+        <input />
+        <br />
+
+        <h2>Color selector</h2>
+        <br /><br />
+
+        <!-- slder control -->
+        <label></label>
+        <input />
+        <br />
+
+        <h2>Slider control</h2>
+        <br /><br />
+
+        <!-- URL -->
+        <br />
+      </form>
+
+      <!-- FILE UPLOAD / File picker -->
+      <form method="post" enctype="multipart/form-data">
+        <p>
+          <label for="uploads">Chose your profile image:</label>
+          <input
+            type="file"
+            id="uploads"
+            name="uploads"
+            accept=".jpg, .jpeg, .png, .svg, .gif"
+          />
+        </p>
+        <br />
+
+        <p>
+          <label for="text">Pick a text file to upload:</label>
+          <input
+            type="file"
+            id="text"
+            name="text"
+            accept=".text, .pdf, .doc, .docx"
+            multiple
+          />
+        </p>
+        <p><input type="submit" value="Submit"</p>
+        <br /><br />
+
+        <h2>File upload / File picker</h2>
+        <br />
+        <button>Submit</button>
+      </form>
+    </main>
+    <br />
+
+    <footer>
+      <p>
+        Made for <a href="http://learn.freecodecamp.org">freeCodeCamp</a> by
+        emarekica
+      </p>
+
+      <!-- GitHub -->
+      <ul id="social">
+        <img src="../img/logo/github-logo.png" alt="Github logo" class="logo" />
+        <li>
+          <a href="https://github.com/emarekica" title="GitHub">GitHub</a>
+        </li>
+
+        <!-- LinkedIn -->
+        <img
+          src="../img/logo/linkedin-logo.png"
+          alt="Linkedin logo"
+          class="logo"
+        />
+        <li>
+          <a
+            href="https://www.linkedin.com/in/marija-ercegovac-93829032"
+            title="LinkedIn"
+            ><i class="fab fa-linkedin"></i>LinkedIn</a
+          >
+        </li>
+
+        <!-- Behance -->
+        <img
+          src="../img/logo/behance-logo.png"
+          alt="Behance logo"
+          class="logo"
+        />
+        <li>
+          <a href="https://www.behance.net/emarekica" title="Behance"
+            >Behance</a
+          >
+        </li>
+
+        <!-- 500px -->
+        <img src="../img/logo/500px-logo-2.png" alt="500px logo" class="logo" />
+        <li>
+          <a href="https://500px.com/p/emarekica?view=photos" title="500px"
+            >500px</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

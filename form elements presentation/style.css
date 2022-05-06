@@ -1,3 +1,9 @@
+/* make a grid 
+18 elements, 3 columns 
+*/
+
+/* --- CSS Reset --- */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -128,8 +134,18 @@ table {
   border-spacing: 0;
 }
 
-/* --------- GENERAL --------- */
+/* --- General --- */
 
-/* --------- img --------- */
+.logo {
+  max-width: 2em;
+  margin: 1em 1em;
+}
 
-/* --------- txt --------- */
+/* selectors for password chech styling */
+/* input:required:invalid, input:focus:invalid {
+    border-color: red; 
+    
+}
+input:required:valid {
+    border-color:green;
+} */
