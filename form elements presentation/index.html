@@ -188,18 +188,67 @@
         <br /><br />
 
         <!-- phone number field -->
-        <label></label>
-        <input />
+        <label for="phone">Please, enter your number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          required
+        />
         <br />
+        <small>Format: 123-456-7890</small>
+        <br /><br />
 
         <h2>Phone number</h2>
         <br /><br />
 
+        <!-- check-box -->
         <!-- multi-select input -->
-        <label></label>
-        <input />
+
+        <fieldset>
+          <legend>Select your 3 prefered colors/shade</legend>
+
+          <div>
+            <label for="blue">blue</label>
+            <input type="checkbox" id="blue" name="blue" checked />
+          </div>
+          <div>
+            <label for="green">green</label>
+            <input type="checkbox" id="green" name="green" />
+          </div>
+          <div>
+            <label for="yellow">yellow</label>
+            <input type="checkbox" id="yellow" name="yellow" />
+          </div>
+          <div>
+            <label for="orange">orange</label>
+            <input type="checkbox" id="orange" name="orange" />
+          </div>
+          <div>
+            <label for="red">red</label>
+            <input type="checkbox" id="red" name="red" />
+          </div>
+          <div>
+            <label for="violet">violet</label>
+            <input type="checkbox" id="violet" name="violet" />
+          </div>
+          <div>
+            <label for="brown">brown</label>
+            <input type="checkbox" id="brown" name="brown" />
+          </div>
+          <div>
+            <label for="black">black</label>
+            <input type="checkbox" id="black" name="black" />
+          </div>
+          <div>
+            <label for="white">white</label>
+            <input type="checkbox" id="white" name="white" />
+          </div>
+        </fieldset>
         <br />
 
+        <h2>Check-box</h2>
         <h2>Multi-select input</h2>
         <br /><br />
 
@@ -235,14 +284,6 @@
         <br />
 
         <h2>Radio button</h2>
-        <br /><br />
-
-        <!-- check-box -->
-        <label></label>
-        <input />
-        <br />
-
-        <h2>Check-box</h2>
         <br /><br />
 
         <!-- color selector -->
