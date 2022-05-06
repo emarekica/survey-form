@@ -4,359 +4,406 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Form Elements Presentation</title>
   </head>
 
   <body>
     <header>
-      <p>Input</p>
-      <h1>Types</h1>
+      <h1>Input Types</h1>
     </header>
     <br />
 
     <main>
       <form>
-        <!-- NAME -->
-        <label for="full-name">Full name</label>
-        <input type="text" id="full-name" placeholder="Jane Doe" required />
+        <!-- name -->
+        <div class="name">
+          <label for="full-name">Full name</label>
+          <input type="text" id="full-name" placeholder="Jane Doe" required />
 
-        <h2>Text input</h2>
+          <h2>Text input</h2>
+        </div>
         <br /><br />
 
-        <!-- E-MAIL -->
-        <label for="email">E-mail:</label>
-        <input
-          type="email"
-          id="email"
-          pattern=".+@globex\.com"
-          size="30"
-          placeholder="Please, type in your password"
-          required
-        />
-        <h2>E-mail with one input</h2>
+        <!-- e-mail -->
+        <div class="email">
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            pattern=".+@globex\.com"
+            size="30"
+            placeholder="Please, type in your password"
+            required
+          />
+          <h2>E-mail with one input</h2>
+        </div>
         <br />
 
-        <label for="emails">Who do you want to email?</label>
-        <input
-          type="email"
-          name="emails"
-          id="emails"
-          name="emails"
-          pattern=".+@globex\.com"
-          placeholder="Click to see your favourite emails list"
-          list="favouriteEmails"
-          size="100"
-        />
+        <!-- e-mail, multiple inputs -->
+        <div class="email-multiple">
+          <label for="emails">Who do you want to email?</label>
+          <input
+            type="email"
+            name="emails"
+            id="emails"
+            name="emails"
+            pattern=".+@globex\.com"
+            placeholder="Click to see your favourite emails list"
+            list="favouriteEmails"
+            size="100"
+          />
 
-        <datalist id="favouriteEmails">
-          <option value="madre@mail.com">Madre</option>
-          <option value="padre@mail.com">Padre</option>
-          <option value="hermana@mail.com">Hermana</option>
-          <option value="abuela@mail.com">Abuela</option>
-          <option value="novio@mail.com">Novio</option>
-        </datalist>
-        <h2>E-mail with multiple inputs</h2>
+          <datalist id="favouriteEmails">
+            <option value="madre@mail.com">Madre</option>
+            <option value="padre@mail.com">Padre</option>
+            <option value="hermana@mail.com">Hermana</option>
+            <option value="abuela@mail.com">Abuela</option>
+            <option value="novio@mail.com">Novio</option>
+          </datalist>
+          <h2>E-mail with multiple inputs</h2>
+        </div>
         <br />
 
         <!-- scrol with multiple  -->
-        <label></label>
-        <select multiple name="drawfs" id="drawfs">
-          <option>Madre</option>
-          <option>Padre</option>
-          <option>Hermana</option>
-          <option>Abuela</option>
-          <option>Novio</option>
-        </select>
-        <h2>Scroll with one selection</h2>
+        <div class="scroll-multiple">
+          <label></label>
+          <select multiple name="drawfs" id="drawfs">
+            <option>Madre</option>
+            <option>Padre</option>
+            <option>Hermana</option>
+            <option>Abuela</option>
+            <option>Novio</option>
+          </select>
+          <h2>Scroll with multiple selection</h2>
+        </div>
         <br /><br />
 
         <!-- PASSWORD -->
-        <label for="pass">Password:</label>
-        <input
-          type="password"
-          id="pass"
-          name="password"
-          minlength="8"
-          maxlength="20"
-          placeholder="Please, enter your password"
-          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
-          required
-        />
+        <div class="password">
+          <label for="pass">Password:</label>
+          <input
+            type="password"
+            id="pass"
+            name="password"
+            minlength="8"
+            maxlength="20"
+            placeholder="Please, enter your password"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
+            required
+          />
 
-        <h2>Password</h2>
+          <h2>Password</h2>
+        </div>
         <br /><br />
 
         <!-- search field -->
-        <label for="search-field"></label>
-        <input type="search" id="search-field" name="question" />
+        <div class="search">
+          <label for="search-field"></label>
+          <input type="search" id="search-field" name="question" />
 
-        <button id="search-field-button">Search</button>
-        <br />
+          <button id="search-field-button">Search</button>
+          <br />
 
-        <h2>Search field</h2>
+          <h2>Search field</h2>
+        </div>
         <br /><br />
 
         <!-- text area -->
         <!-- inputs with top-aligned labels -->
-        <label for="your-story"
-          >We are interested in your story, tell us!</label
-        >
-        <br />
-        <textarea
-          id="your-input"
-          name="story"
-          rows="10"
-          columns="10"
-          placeholder="Write your story here."
-        ></textarea>
-        <br />
+        <div class="text-area">
+          <label for="your-story"
+            >We are interested in your story, tell us!</label
+          >
+          <br />
+          <textarea
+            id="your-input"
+            name="story"
+            rows="10"
+            columns="10"
+            placeholder="Write your story here."
+          ></textarea>
+          <br />
 
-        <!-- inputs with floating labels -->
-        <!-- <label></label>
+          <!-- inputs with floating labels -->
+          <!-- <label></label>
         <input />
         <br /> -->
 
-        <h2>Text area</h2>
+          <h2>Text area</h2>
+        </div>
         <br /><br />
 
         <!-- date picker -->
-        <label for="date-picker"></label>
-        <input
-          type="date"
-          id="date-picker"
-          name="trip-start"
-          value="2020-01-01"
-          max="2100-01-01"
-        />
-        <br />
+        <div class="datepicker">
+          <label for="date-picker"></label>
+          <input
+            type="date"
+            id="date-picker"
+            name="trip-start"
+            value="2020-01-01"
+            max="2100-01-01"
+          />
+          <br />
 
-        <h2>Date picker</h2>
+          <h2>Date picker</h2>
+        </div>
         <br /><br />
 
         <!-- time picker -->
-        <label for="time-picker">Pick start time:</label>
-        <input
-          type="time"
-          id="time-picker"
-          name="time"
-          min="00:00"
-          max="23:59"
-        />
-        <br /><br />
+        <div class="timepicker">
+          <label for="time-picker">Pick start time:</label>
+          <input
+            type="time"
+            id="time-picker"
+            name="time"
+            min="00:00"
+            max="23:59"
+          />
+          <br /><br />
 
-        <label for="time-picker">Pick end time:</label>
-        <input
-          type="time"
-          id="time-picker"
-          name="time"
-          min="00:00"
-          max="23:59"
-        />
-        <br />
+          <label for="time-picker">Pick end time:</label>
+          <input
+            type="time"
+            id="time-picker"
+            name="time"
+            min="00:00"
+            max="23:59"
+          />
+          <br />
 
-        <h2>Time picker</h2>
+          <h2>Time picker</h2>
+        </div>
         <br /><br />
 
         <!-- datetime-local picker -->
-        <label for="datetime-local-picker"></label>
-        <input
-          type="datetime-local"
-          id="datetime-local-picker"
-          name="datetime-picker"
-          min="1999-01-01T00:00"
-          max="2022-06-05T23:59"
-          required
-        />
-        <br />
+        <div class="datetime">
+          <label for="datetime-local-picker"></label>
+          <input
+            type="datetime-local"
+            id="datetime-local-picker"
+            name="datetime-picker"
+            min="1999-01-01T00:00"
+            max="2022-06-05T23:59"
+            required
+          />
+          <br />
 
-        <h2>Date/time local picker</h2>
+          <h2>Date/time local picker</h2>
+        </div>
         <br /><br />
 
         <!-- drop-down -->
-        <label for="dropdown"></label>
-        <select id="dropdown">
-          <option value="">--Select your prefered option---</option>
-          <option value="spring">spring</option>
-          <option value="summer">summer</option>
-          <option value="autumn">autumn</option>
-          <option value="winter">winter</option>
-        </select>
-        <br />
+        <div class="dropdown">
+          <label for="dropdown"></label>
+          <select id="dropdown" name="groups">
+            <optgroup label="seasons">
+              <option value="spring">spring</option>
+              <option value="summer">summer</option>
+              <option value="autumn">autumn</option>
+              <option value="winter">winter</option>
+            </optgroup>
+            <optgroup label="locations">
+              <option>Carrot</option>
+              <option>Eggplant</option>
+              <option>Potato</option>
+            </optgroup>
+          </select>
+          <br />
 
-        <h2>Drop-down menu</h2>
+          <h2>Drop-down menu</h2>
+        </div>
         <br /><br />
 
         <!-- phone number field -->
-        <label for="phone">Please, enter your number:</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-          required
-        />
-        <br />
-        <small>Format: 123-456-7890</small>
-        <br /><br />
+        <div class="phonenumber">
+          <label for="phone">Please, enter your number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+          />
+          <br />
+          <small>Format: 123-456-7890</small>
+          <br /><br />
 
-        <h2>Phone number</h2>
+          <h2>Phone number</h2>
+        </div>
         <br /><br />
 
         <!-- check-box -->
         <!-- multi-select input -->
 
-        <fieldset>
-          <legend>Select your 3 prefered colors/shade</legend>
+        <div class="checkbox">
+          <fieldset>
+            <legend>Select your 3 prefered colors/shade</legend>
 
-          <div>
-            <label for="blue">blue</label>
-            <input type="checkbox" id="blue" name="blue" checked />
-          </div>
-          <div>
-            <label for="green">green</label>
-            <input type="checkbox" id="green" name="green" />
-          </div>
-          <div>
-            <label for="yellow">yellow</label>
-            <input type="checkbox" id="yellow" name="yellow" />
-          </div>
-          <div>
-            <label for="orange">orange</label>
-            <input type="checkbox" id="orange" name="orange" />
-          </div>
-          <div>
-            <label for="red">red</label>
-            <input type="checkbox" id="red" name="red" />
-          </div>
-          <div>
-            <label for="violet">violet</label>
-            <input type="checkbox" id="violet" name="violet" />
-          </div>
-          <div>
-            <label for="brown">brown</label>
-            <input type="checkbox" id="brown" name="brown" />
-          </div>
-          <div>
-            <label for="black">black</label>
-            <input type="checkbox" id="black" name="black" />
-          </div>
-          <div>
-            <label for="white">white</label>
-            <input type="checkbox" id="white" name="white" />
-          </div>
-        </fieldset>
-        <br />
+            <div>
+              <label for="blue">blue</label>
+              <input type="checkbox" id="blue" name="blue" checked />
+            </div>
+            <div>
+              <label for="green">green</label>
+              <input type="checkbox" id="green" name="green" />
+            </div>
+            <div>
+              <label for="yellow">yellow</label>
+              <input type="checkbox" id="yellow" name="yellow" />
+            </div>
+            <div>
+              <label for="orange">orange</label>
+              <input type="checkbox" id="orange" name="orange" />
+            </div>
+            <div>
+              <label for="red">red</label>
+              <input type="checkbox" id="red" name="red" />
+            </div>
+            <div>
+              <label for="violet">violet</label>
+              <input type="checkbox" id="violet" name="violet" />
+            </div>
+            <div>
+              <label for="brown">brown</label>
+              <input type="checkbox" id="brown" name="brown" />
+            </div>
+            <div>
+              <label for="black">black</label>
+              <input type="checkbox" id="black" name="black" />
+            </div>
+            <div>
+              <label for="white">white</label>
+              <input type="checkbox" id="white" name="white" />
+            </div>
+          </fieldset>
+          <br />
 
-        <h2>Check-box</h2>
-        <h2>Multi-select input</h2>
+          <h2>Check-box</h2>
+          <h2>Multi-select input</h2>
+        </div>
         <br /><br />
 
         <!-- input with stepper -->
         <!-- slider -->
-        <div>
-          <label for="volume">Volume: </label>
+        <div class="slider">
+          <div>
+            <label for="volume">Volume: </label>
+            <br />
+            <input
+              type="range"
+              id="volume"
+              name="volume"
+              min="0"
+              max="11"
+              step="2"
+            />
+          </div>
           <br />
-          <input
-            type="range"
-            id="volume"
-            name="volume"
-            min="0"
-            max="11"
-            step="2"
-          />
-        </div>
-        <br />
 
-        <h2>Input with stepper/Slider</h2>
+          <h2>Input with stepper/Slider</h2>
+        </div>
         <br /><br />
 
         <!-- number input -->
         <!-- min/max -->
-        <label for="age" id="number-label">Age(optional):</label>
-        <input
-          type="number"
-          id="age"
-          min="1"
-          max="120"
-          name="age"
-          placeholder="Please, write a number."
-        />
-        <br />
+        <div class="minmax">
+          <label for="age" id="number-label">Age(optional):</label>
+          <input
+            type="number"
+            id="age"
+            min="1"
+            max="120"
+            name="age"
+            placeholder="Please, write a number."
+          />
+          <br />
 
-        <h2>Number min/max</h2>
+          <h2>Number min/max</h2>
+        </div>
         <br /><br />
 
         <!-- radio-button -->
-        <fieldset id="radio">
-          <legend>Select your morning favourite drink:</legend>
-          <div>
-            <label for="coffee">coffee</label>
-            <input type="radio" id="coffee" value="" name="drink" checked />
-          </div>
-          <div>
-            <label for="tea">tea</label>
-            <input type="radio" id="tea" value="tea" name="drink" />
-          </div>
-          <div>
-            <label for="lemon-water">lemon water</label>
-            <input
-              type="radio"
-              id="lemon-water"
-              value="lemonwater"
-              name="drink"
-            />
-          </div>
-          <div>
-            <label for="none">none</label>
-            <input type="radio" id="none" value="none" name="drink" />
-          </div>
-        </fieldset>
-        <br />
+        <div class="radio">
+          <fieldset id="radio">
+            <legend>Select your morning favourite drink:</legend>
+            <div>
+              <label for="coffee">coffee</label>
+              <input type="radio" id="coffee" value="" name="drink" checked />
+            </div>
+            <div>
+              <label for="tea">tea</label>
+              <input type="radio" id="tea" value="tea" name="drink" />
+            </div>
+            <div>
+              <label for="lemon-water">lemon water</label>
+              <input
+                type="radio"
+                id="lemon-water"
+                value="lemonwater"
+                name="drink"
+              />
+            </div>
+            <div>
+              <label for="none">none</label>
+              <input type="radio" id="none" value="none" name="drink" />
+            </div>
+          </fieldset>
+          <br />
 
-        <h2>Radio button</h2>
+          <h2>Radio button</h2>
+        </div>
         <br /><br />
 
         <!-- color selector -->
-        <label>Select your main theme colors:</label>
-        <div>
-          <input
-            type="color"
-            id="background"
-            name="theme-color"
-            value="background"
-            required
-          />
-          <label for="background"> background</label>
-        </div>
-        <div>
-          <input
-            type="color"
-            id="fonts"
-            name="theme-color"
-            value="fonts"
-            required
-          />
-          <label for="fonts"> fonts</label>
-        </div>
-        <div>
-          <input
-            type="color"
-            id="border"
-            name="theme-color"
-            value="border"
-            required
-          />
-          <label for="border"> border</label>
-        </div>
-        <br />
+        <div class="color">
+          <label>Select your main theme colors:</label>
+          <div>
+            <input
+              type="color"
+              id="background"
+              name="theme-color"
+              value="background"
+              required
+            />
+            <label for="background"> background</label>
+          </div>
+          <div>
+            <input
+              type="color"
+              id="fonts"
+              name="theme-color"
+              value="fonts"
+              required
+            />
+            <label for="fonts"> fonts</label>
+          </div>
+          <div>
+            <input
+              type="color"
+              id="border"
+              name="theme-color"
+              value="border"
+              required
+            />
+            <label for="border"> border</label>
+          </div>
+          <br />
 
-        <h2>Color selector</h2>
+          <h2>Color selector</h2>
+        </div>
         <br /><br />
 
         <!-- URL -->
-        <br />
-
+<div class="url">
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
       </form>
@@ -389,6 +436,7 @@
         <br /><br />
 
         <h2>File upload / File picker</h2>
+      </div>
         <br />
         <button>Submit</button>
       </form>

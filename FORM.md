@@ -180,6 +180,18 @@ When associated with `form`, the value of this element must be `id` of this `for
 
 ---
 
+**CSS**
+<br>
+
+### Background
+
+<br>
+
+You can use `background-attachment: fixed;` to make the background image scroll with the page and thus not having to stretch through the entire height.
+<br><br>
+
+## <br><br>
+
 <br>
 
 <br><br>
