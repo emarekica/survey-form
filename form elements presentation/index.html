@@ -253,8 +253,18 @@
         <br /><br />
 
         <!-- input with stepper -->
-        <label></label>
-        <input />
+        <div>
+          <label for="volume">Volume: </label>
+          <br />
+          <input
+            type="range"
+            id="volume"
+            name="volume"
+            min="0"
+            max="11"
+            step="2"
+          />
+        </div>
         <br />
 
         <h2>Input with stepper</h2>
@@ -278,8 +288,28 @@
 
         <!-- radio-button -->
         <fieldset id="radio">
-          <legend>Select your favourite</legend>
-          <input />
+          <legend>Select your morning favourite drink:</legend>
+          <div>
+            <label for="coffee">coffee</label>
+            <input type="radio" id="coffee" value="" name="drink" />
+          </div>
+          <div>
+            <label for="tea">tea</label>
+            <input type="radio" id="tea" value="tea" name="drink" />
+          </div>
+          <div>
+            <label for="lemon-water">lemon water</label>
+            <input
+              type="radio"
+              id="lemon-water"
+              value="lemonwater"
+              name="drink"
+            />
+          </div>
+          <div>
+            <label for="none">none</label>
+            <input type="radio" id="none" value="none" name="drink" />
+          </div>
         </fieldset>
         <br />
 
@@ -294,7 +324,7 @@
         <h2>Color selector</h2>
         <br /><br />
 
-        <!-- slder control -->
+        <!-- slider control -->
         <label></label>
         <input />
         <br />
