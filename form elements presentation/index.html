@@ -88,37 +88,89 @@
         <br /><br />
 
         <!-- search field -->
-        <label></label>
-        <input />
+        <label for="search-field"></label>
+        <input type="search" id="search-field" name="question" />
+
+        <button id="search-field-button">Search</button>
         <br />
 
         <h2>Search field</h2>
         <br /><br />
 
         <!-- text area -->
-        <!-- inputs with floating labels -->
         <!-- inputs with top-aligned labels -->
-        <label></label>
-        <input />
+        <label for="your-story"
+          >We are interested in your story, tell us!</label
+        >
         <br />
+        <textarea
+          id="your-input"
+          name="story"
+          rows="10"
+          columns="10"
+          placeholder="Write your story here."
+        ></textarea>
+        <br />
+
+        <!-- inputs with floating labels -->
+        <!-- <label></label>
+        <input />
+        <br /> -->
 
         <h2>Text area</h2>
         <br /><br />
 
         <!-- date picker -->
-        <label></label>
-        <input />
+        <label for="date-picker"></label>
+        <input
+          type="date"
+          id="date-picker"
+          name="trip-start"
+          value="2020-01-01"
+          max="2100-01-01"
+        />
         <br />
 
         <h2>Date picker</h2>
         <br /><br />
 
         <!-- time picker -->
-        <label></label>
-        <input />
+        <label for="time-picker">Pick start time:</label>
+        <input
+          type="time"
+          id="time-picker"
+          name="time"
+          min="00:00"
+          max="23:59"
+        />
+        <br /><br />
+
+        <label for="time-picker">Pick end time:</label>
+        <input
+          type="time"
+          id="time-picker"
+          name="time"
+          min="00:00"
+          max="23:59"
+        />
         <br />
 
         <h2>Time picker</h2>
+        <br /><br />
+
+        <!-- datetime-local picker -->
+        <label for="datetime-local-picker"></label>
+        <input
+          type="datetime-local"
+          id="datetime-local-picker"
+          name="datetime-picker"
+          min="1999-01-01T00:00"
+          max="2022-06-05T23:59"
+          required
+        />
+        <br />
+
+        <h2>Date/time local picker</h2>
         <br /><br />
 
         <!-- drop-down -->
@@ -211,7 +263,11 @@
 
         <!-- URL -->
         <br />
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
       </form>
+      <br /><br /><br />
 
       <!-- FILE UPLOAD / File picker -->
       <form method="post" enctype="multipart/form-data">
@@ -236,7 +292,7 @@
             multiple
           />
         </p>
-        <p><input type="submit" value="Submit"</p>
+        <input type="submit" value="Submit" />
         <br /><br />
 
         <h2>File upload / File picker</h2>
