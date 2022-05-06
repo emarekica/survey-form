@@ -156,6 +156,28 @@ When associated with `form`, the value of this element must be `id` of this `for
 
 <br><br>
 
+### Two "button" versions
+
+<br>
+
+1:
+
+    <input type="submit" value="Submit" />
+
+2:
+
+    <button type="button">Submit</button>
+
+<br><br>
+
+### Date & time formats in HTML
+
+<br>
+
+[MDN examples](https://developer.mozilla.org/en-US/docs/Web/HTML/Date_and_time_formats)
+
+<br><br>
+
 ---
 
 <br>

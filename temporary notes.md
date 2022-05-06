@@ -2,6 +2,12 @@
 
 <br><br>
 
+Add [Floating label](https://itnext.io/how-to-build-a-floating-label-input-field-f9b21669fe2f) to one of the text-area fields.
+
+<br><br>
+
+---
+
 ## FORM ELEMENTS
 
 **Existing**
