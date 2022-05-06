@@ -253,6 +253,7 @@
         <br /><br />
 
         <!-- input with stepper -->
+        <!-- slider -->
         <div>
           <label for="volume">Volume: </label>
           <br />
@@ -267,7 +268,7 @@
         </div>
         <br />
 
-        <h2>Input with stepper</h2>
+        <h2>Input with stepper/Slider</h2>
         <br /><br />
 
         <!-- number input -->
@@ -291,7 +292,7 @@
           <legend>Select your morning favourite drink:</legend>
           <div>
             <label for="coffee">coffee</label>
-            <input type="radio" id="coffee" value="" name="drink" />
+            <input type="radio" id="coffee" value="" name="drink" checked />
           </div>
           <div>
             <label for="tea">tea</label>
@@ -317,19 +318,40 @@
         <br /><br />
 
         <!-- color selector -->
-        <label>Select your theme</label>
-        <input />
+        <label>Select your main theme colors:</label>
+        <div>
+          <input
+            type="color"
+            id="background"
+            name="theme-color"
+            value="background"
+            required
+          />
+          <label for="background"> background</label>
+        </div>
+        <div>
+          <input
+            type="color"
+            id="fonts"
+            name="theme-color"
+            value="fonts"
+            required
+          />
+          <label for="fonts"> fonts</label>
+        </div>
+        <div>
+          <input
+            type="color"
+            id="border"
+            name="theme-color"
+            value="border"
+            required
+          />
+          <label for="border"> border</label>
+        </div>
         <br />
 
         <h2>Color selector</h2>
-        <br /><br />
-
-        <!-- slider control -->
-        <label></label>
-        <input />
-        <br />
-
-        <h2>Slider control</h2>
         <br /><br />
 
         <!-- URL -->
