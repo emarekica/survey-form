@@ -152,7 +152,7 @@ body {
   color: rgb(168, 201, 205);
   font-family: "Maven Pro", sans-serif;
 
-  margin: 0 3.5em 2em 3.5em;
+  margin: 0 3em 2em 3em;
 }
 
 header {
@@ -182,8 +182,8 @@ form {
   display: grid;
   grid-template-columns: repeat(3, 30%);
   grid-template-rows: auto;
-  column-gap: 5%;
-  row-gap: 15px;
+  column-gap: 2%;
+  row-gap: 2%;
 
   justify-items: stretch;
   align-items: stretch;
@@ -222,6 +222,95 @@ form {
   margin: 0.2em 0.2em;
   padding: 2em 2em;
   border-radius: 0.5em;
+}
+
+.email {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.email-multiple {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.scroll-multiple {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.password {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.search {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.text-area {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.datepicker {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+.timepicker {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.datetime {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+.dropdown {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.phonenumber {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+}
+
+.checkbox {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+}
+
+.slider {
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+}
+
+.minmax {
+  grid-column: 3 / 4;
+  grid-row: 5 / 6;
+}
+
+.radio {
+  grid-column: 1 / 2;
+  grid-row: 6 / 7;
+}
+
+.color {
+  grid-column: 2 / 3;
+  grid-row: 6 / 7;
+}
+
+.url {
+  grid-column: 3 / 4;
+  grid-row: 6 / 7;
+}
+
+.fileupload {
+  grid-column: 1 / 4;
+  grid-row: 7 / 8;
 }
 
 #familia {

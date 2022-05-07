@@ -23,7 +23,7 @@
     <br />
 
     <main>
-      <form>
+      <form method="post" enctype="multipart/form-data">
         <!-- name -->
         <div class="name">
           <label for="full-name">Full name</label>
@@ -410,12 +410,11 @@
          placeholder="https://example.com"
          pattern="https://.*" size="30"
          required>
-        
-      </form>
+        </div>
       <br /><br /><br />
 
       <!-- FILE UPLOAD / File picker -->
-      <form class="fileupload" method="post" enctype="multipart/form-data">
+      <div class="fileupload"> 
         <p>
           <label for="uploads">Chose your profile image:</label>
           <input
@@ -438,13 +437,17 @@
           />
         </p>
         <input type="submit" value="Submit" />
+        </div>
         <br /><br />
 
         <h2>File upload / File picker</h2>
       </div>
         <br />
-        <button class="form-submit-button">Submit</button>
-        <button class="form-reset-button" type="reset">Reset</button>
+        
+        <div class="submit-buttons">
+         <button class="form-submit-button">Submit</button>
+         <button class="form-reset-button" type="reset">Reset</button>
+      </div>
       </form>
     </main>
     <br />
