@@ -178,21 +178,57 @@ textarea {
   border-radius: 0.5em;
 }
 
-.logo {
-  max-width: 2em;
-  margin: 1em 1em;
-}
-
 form {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat(3, 30%);
   grid-template-rows: auto;
-  column-gap: 10px;
+  column-gap: 5%;
   row-gap: 15px;
 
   justify-items: stretch;
   align-items: stretch;
 }
+
+.form-submit-button,
+.form-reset-button {
+  padding: 1em 5em;
+  margin: 1em 1em;
+}
+
+/* --- ELEMENTS --- */
+
+.name,
+.email,
+.email-multiple,
+.scroll-multiple,
+.password,
+.search,
+.text-area,
+.datepicker,
+.timepicker,
+.datetime,
+.dropdown,
+.phonenumber,
+.checkbox,
+.slider,
+.minmax,
+.radio,
+.color,
+.url,
+.fileupload {
+  background-color: rgba(227, 232, 242, 0.18);
+  box-shadow: rgba(104, 103, 103, 0.25) 0px 13px 27px -5px,
+    rgba(196, 196, 196, 0.3) 0px 8px 16px -8px;
+  margin: 0.2em 0.2em;
+  padding: 2em 2em;
+  border-radius: 0.5em;
+}
+
+#familia {
+  border-radius: 0.5em;
+}
+
+/* --- FOOTER --- */
 
 footer {
   /* background-color: rgb(112 129 140 / 40%);
@@ -218,6 +254,11 @@ footer {
 
 ul {
   display: flex;
+}
+
+.logo {
+  max-width: 2em;
+  margin: 1em 1em;
 }
 
 /* selectors for password chech styling */
