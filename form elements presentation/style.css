@@ -199,11 +199,6 @@ textarea {
   border-radius: 0.5em;
 }
 
-main {
-  margin-bottom: 4em;
-  /* padding: 0 0 10em 3.5em; */
-}
-
 form {
   display: grid;
   grid-template-columns: repeat(3, 30%);
@@ -213,7 +208,7 @@ form {
 
   justify-items: stretch;
   align-items: stretch;
-  margin: 4em 0 10em 0;
+  margin: 2em 0;
   padding-left: 4em;
 }
 
@@ -237,11 +232,29 @@ form {
 
 /* custom linear gradient */
 .form-submit-button {
-  background: linear-gradient(to left bottom, #365959, #365953, #26403d);
+  background: linear-gradient(#2f4659, #435b6ac4);
+  border: none;
+  box-shadow: rgb(50 50 105 / 15%) 0px 2px 5px 0px,
+    rgb(0 0 0 / 5%) 0px 1px 1px 0px;
+
+  padding: 2em 1em;
+  color: #fff;
+  width: 15em;
+  letter-spacing: 0.3em;
+  font-size: 0.9em;
 }
 
 .form-reset-button {
-  background: linear-gradient(to right bottom, #26403d, #365953, #365959);
+  background: linear-gradient(#2f4659, #435b6ac4);
+  border: none;
+  box-shadow: rgb(50 50 105 / 15%) 0px 2px 5px 0px,
+    rgb(0 0 0 / 5%) 0px 1px 1px 0px;
+
+  padding: 1em;
+  color: #fff;
+  width: 15em;
+  letter-spacing: 0.3em;
+  font-size: 0.9em;
 }
 
 #familia {
@@ -253,7 +266,7 @@ form {
   border: 1px solid rgba(217, 217, 217, 0.3);
 }
 
-#familia::selection {
+select::selection {
   font-weight: bolder;
   color: #fff;
 }
@@ -262,6 +275,25 @@ div {
   display: flex;
   flex-flow: column wrap;
   align-items: stretch;
+}
+
+textarea {
+  background: transparent;
+}
+
+#search-field-button {
+  border: none;
+  box-shadow: rgb(50 50 105 / 15%) 0px 2px 5px 0px,
+    rgb(0 0 0 / 5%) 0px 1px 1px 0px;
+  background: transparent;
+  padding: 1em;
+  color: #fff;
+}
+
+#background,
+#fonts,
+#border {
+  padding: 0 1px;
 }
 
 /* --- ELEMENTS in grid --- */
@@ -447,7 +479,7 @@ footer {
   grid-row: 9 / 10;
 
   padding: 2em 2em;
-  margin: 3em 2em 2em 2em;
+  margin: 2em 2em 2em 2em;
 
   font-weight: lighter;
 }
