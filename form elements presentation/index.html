@@ -26,15 +26,16 @@
       <form method="post" enctype="multipart/form-data">
         <!-- name -->
         <div class="name">
-          <label for="full-name">Full name</label>
+          <h2>Text input</h2>
+          <label for="full-name">Full name: </label>
           <input type="text" id="full-name" placeholder="Jane Doe" required />
 
-          <h2>Text input</h2>
         </div>
         <br /><br />
 
         <!-- e-mail -->
         <div class="email">
+          <h2>E-mail with one input</h2>
           <label for="email">E-mail:</label>
           <input
             type="email"
@@ -44,12 +45,12 @@
             placeholder="Please, type in your password"
             required
           />
-          <h2>E-mail with one input</h2>
         </div>
         <br />
 
         <!-- e-mail, multiple inputs -->
         <div class="email-multiple">
+          <h2>E-mail with multiple inputs</h2>
           <label for="emails">Who do you want to email?</label>
           <input
             type="email"
@@ -57,7 +58,7 @@
             id="emails"
             name="emails"
             pattern=".+@globex\.com"
-            placeholder="Click to see your favourite emails list"
+            placeholder="See your favourite emails list"
             list="favouriteEmails"
             size="100"
           />
@@ -69,12 +70,12 @@
             <option value="abuela@mail.com">Abuela</option>
             <option value="novio@mail.com">Novio</option>
           </datalist>
-          <h2>E-mail with multiple inputs</h2>
         </div>
         <br />
 
         <!-- scrol with multiple  -->
         <div class="scroll-multiple">
+          <h2>Scroll with multiple selection</h2>
           <label>Choose a family member for ICE number:</label>
           <select multiple name="mifamilia" id="familia">
             <option>Madre</option>
@@ -83,13 +84,13 @@
             <option>Abuela</option>
             <option>Novio</option>
           </select>
-          <h2>Scroll with multiple selection</h2>
         </div>
         <br /><br />
 
         <!-- PASSWORD -->
         <div class="password">
-          <label for="pass">Password:</label>
+          <h2>Password</h2>
+          <label for="pass">Enter your password:</label>
           <input
             type="password"
             id="pass"
@@ -101,25 +102,25 @@
             required
           />
 
-          <h2>Password</h2>
         </div>
         <br /><br />
 
         <!-- search field -->
         <div class="search">
+          <h2>Search field</h2>
           <label for="search-field"></label>
           <input type="search" id="search-field" name="question" />
 
           <button id="search-field-button">Search</button>
           <br />
 
-          <h2>Search field</h2>
         </div>
         <br /><br />
 
         <!-- text area -->
         <!-- inputs with top-aligned labels -->
         <div class="text-area">
+          <h2>Text area</h2>
           <label for="your-story"
             >We are interested in your story, tell us!</label
           >
@@ -138,12 +139,12 @@
         <input />
         <br /> -->
 
-          <h2>Text area</h2>
         </div>
         <br /><br />
 
         <!-- date picker -->
         <div class="datepicker">
+          <h2>Date picker</h2>
           <label for="date-picker"></label>
           <input
             type="date"
@@ -154,12 +155,12 @@
           />
           <br />
 
-          <h2>Date picker</h2>
         </div>
         <br /><br />
 
         <!-- time picker -->
         <div class="timepicker">
+          <h2>Time picker</h2>
           <label for="time-picker">Pick start time:</label>
           <input
             type="time"
@@ -180,12 +181,12 @@
           />
           <br />
 
-          <h2>Time picker</h2>
         </div>
         <br /><br />
 
         <!-- datetime-local picker -->
         <div class="datetime">
+          <h2>Date/time local picker</h2>
           <label for="datetime-local-picker"></label>
           <input
             type="datetime-local"
@@ -197,12 +198,12 @@
           />
           <br />
 
-          <h2>Date/time local picker</h2>
         </div>
         <br /><br />
 
         <!-- drop-down -->
         <div class="dropdown">
+          <h2>Drop-down menu</h2>
           <label for="dropdown"></label>
           <select id="dropdown" name="groups">
             <optgroup label="seasons">
@@ -219,12 +220,12 @@
           </select>
           <br />
 
-          <h2>Drop-down menu</h2>
         </div>
         <br /><br />
 
         <!-- phone number field -->
         <div class="phonenumber">
+          <h2>Phone number</h2>
           <label for="phone">Please, enter your number:</label>
           <input
             type="tel"
@@ -237,7 +238,6 @@
           <small>Format: 123-456-7890</small>
           <br /><br />
 
-          <h2>Phone number</h2>
         </div>
         <br /><br />
 
@@ -245,6 +245,7 @@
         <!-- multi-select input -->
 
         <div class="checkbox">
+          <h2>Check-box</h2>
           <fieldset>
             <legend>Select your 3 prefered colors/shade</legend>
 
@@ -286,15 +287,46 @@
             </div>
           </fieldset>
           <br />
-
-          <h2>Check-box</h2>
-          <h2>Multi-select input</h2>
         </div>
         <br /><br />
+
+                <!-- radio-button -->
+                <div class="radio">
+                  <h2>Radio button</h2>
+                  <fieldset id="radio">
+                    <legend>Select your morning favourite drink:</legend>
+                    <div>
+                      <input type="radio" id="coffee" value="" name="drink" checked />
+                      <label for="coffee">coffee</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="tea" value="tea" name="drink" />
+                      <label for="tea">tea</label>
+                    </div>
+                    <div>
+                      <input
+                      type="radio"
+                      id="lemon-water"
+                      value="lemonwater"
+                      name="drink"
+                      />
+                      <label for="lemon-water">lemon water</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="none" value="none" name="drink" />
+                      <label for="none">none</label>
+                    </div>
+                  </fieldset>
+                  <br />
+        
+                  <h2>Radio button</h2>
+                </div>
+                <br /><br />
 
         <!-- input with stepper -->
         <!-- slider -->
         <div class="slider">
+          <h2>Input with stepper/Slider</h2>
           <div>
             <label for="volume">Volume: </label>
             <br />
@@ -308,14 +340,13 @@
             />
           </div>
           <br />
-
-          <h2>Input with stepper/Slider</h2>
         </div>
         <br /><br />
 
         <!-- number input -->
         <!-- min/max -->
         <div class="minmax">
+          <h2>Number min/max</h2>
           <label for="age" id="number-label">Age(optional):</label>
           <input
             type="number"
@@ -326,45 +357,14 @@
             placeholder="Please, write a number."
           />
           <br />
-
-          <h2>Number min/max</h2>
         </div>
         <br /><br />
 
-        <!-- radio-button -->
-        <div class="radio">
-          <fieldset id="radio">
-            <legend>Select your morning favourite drink:</legend>
-            <div>
-              <input type="radio" id="coffee" value="" name="drink" checked />
-              <label for="coffee">coffee</label>
-            </div>
-            <div>
-              <input type="radio" id="tea" value="tea" name="drink" />
-              <label for="tea">tea</label>
-            </div>
-            <div>
-              <input
-              type="radio"
-              id="lemon-water"
-              value="lemonwater"
-              name="drink"
-              />
-              <label for="lemon-water">lemon water</label>
-            </div>
-            <div>
-              <input type="radio" id="none" value="none" name="drink" />
-              <label for="none">none</label>
-            </div>
-          </fieldset>
-          <br />
 
-          <h2>Radio button</h2>
-        </div>
-        <br /><br />
 
         <!-- color selector -->
         <div class="color">
+          <h2>Color selector</h2>
           <label>Select your main theme colors:</label>
           <div>
             <label for="background"> background</label>
@@ -397,13 +397,12 @@
             />
           </div>
           <br />
-
-          <h2>Color selector</h2>
         </div>
         <br /><br />
 
         <!-- URL -->
 <div class="url">
+  <h2>URL</h2>
   <label for="url">Enter an https:// URL:</label>
 
   <input type="url" name="url" id="url"
@@ -415,6 +414,7 @@
 
       <!-- FILE UPLOAD / File picker -->
       <div class="fileupload"> 
+        <h2>File upload / File picker</h2>
         <p>
           <label for="uploads">Chose your profile image:</label>
           <input
@@ -437,16 +437,16 @@
           />
         </p>
         <input type="submit" value="Submit" />
+        
         </div>
         <br /><br />
 
-        <h2>File upload / File picker</h2>
       </div>
         <br />
         
         <div class="submit-buttons">
-         <button class="form-submit-button">Submit</button>
-         <button class="form-reset-button" type="reset">Reset</button>
+         <button class="form-submit-button">SUBMIT</button>
+         <button class="form-reset-button" type="reset">RESET</button>
       </div>
       </form>
     </main>

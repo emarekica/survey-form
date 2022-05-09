@@ -1,5 +1,23 @@
-/* make a grid 
-18 elements, 3 columns 
+/* 
+COLOR THEMES
+
+-- green: 
+
+#365959;
+#798C8C;
+#26403D;
+#B0BFBE;
+#365953;
+
+-- blue: 
+
+#033F73;
+#2F4659;
+#024873;
+#023859;
+#A1C9CD; (font)
+
+
 */
 
 /* --- CSS Reset --- */
@@ -142,6 +160,9 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+
   /* background-image: url(https://images.unsplash.com/photo-1547623641-d2c56c03e2a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80); */
 
   background-image: url(https://images.unsplash.com/photo-1604339454409-701c5278c546?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z3JhZGllbnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60);
@@ -160,8 +181,8 @@ header {
   box-shadow: rgba(104, 103, 103, 0.25) 0px 13px 27px -5px,
     rgba(196, 196, 196, 0.3) 0px 8px 16px -8px;
 
-  margin: 2em 2em;
-  padding: 3em 2em;
+  margin: 4em 2em 1em 2em;
+  padding: 5em 2em;
   border-radius: 2em;
 
   display: flex;
@@ -178,24 +199,72 @@ textarea {
   border-radius: 0.5em;
 }
 
+main {
+  margin-bottom: 4em;
+  /* padding: 0 0 10em 3.5em; */
+}
+
 form {
   display: grid;
   grid-template-columns: repeat(3, 30%);
   grid-template-rows: auto;
   column-gap: 2%;
-  row-gap: 2%;
+  row-gap: 1%;
 
   justify-items: stretch;
   align-items: stretch;
+  margin: 4em 0 10em 0;
+  padding-left: 4em;
+}
+
+.submit-buttons {
+  grid-column: 1 / 4;
+  grid-row: 8 / 9;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .form-submit-button,
 .form-reset-button {
   padding: 1em 5em;
   margin: 1em 1em;
+
+  text-transform: full-width;
+  color: rgb(168, 201, 205);
 }
 
-/* --- ELEMENTS --- */
+/* custom linear gradient */
+.form-submit-button {
+  background: linear-gradient(to left bottom, #365959, #365953, #26403d);
+}
+
+.form-reset-button {
+  background: linear-gradient(to right bottom, #26403d, #365953, #365959);
+}
+
+#familia {
+  background: transparent;
+  color: #fff;
+  font-weight: lighter;
+
+  border-radius: 0.5em;
+  border: 1px solid rgba(217, 217, 217, 0.3);
+}
+
+#familia::selection {
+  font-weight: bolder;
+  color: #fff;
+}
+
+div {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: stretch;
+}
+
+/* --- ELEMENTS in grid --- */
 
 .name,
 .email,
@@ -225,8 +294,17 @@ form {
 }
 
 .email {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-content: stretch;
+
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+}
+
+#email {
+  max-width: fit-content;
 }
 
 .email-multiple {
@@ -283,22 +361,22 @@ form {
   grid-row: 5 / 6;
 }
 
-.slider {
+.radio {
   grid-column: 2 / 3;
   grid-row: 5 / 6;
 }
 
-.minmax {
+.color {
   grid-column: 3 / 4;
   grid-row: 5 / 6;
 }
 
-.radio {
+.slider {
   grid-column: 1 / 2;
   grid-row: 6 / 7;
 }
 
-.color {
+.minmax {
   grid-column: 2 / 3;
   grid-row: 6 / 7;
 }
@@ -313,8 +391,36 @@ form {
   grid-row: 7 / 8;
 }
 
-#familia {
-  border-radius: 0.5em;
+[placeholder] {
+  font-weight: lighter;
+}
+
+label {
+  margin: 1em 1em;
+}
+
+input {
+  margin: 1em 1em;
+  padding: 0.5em 0.5em;
+  width: 90%;
+
+  background: transparent;
+  border: 1px solid rgba(217, 217, 217, 0.3);
+
+  color: #fff;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+}
+
+h2 {
+  margin: 1em auto;
+  padding: 1em 1em;
+
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+  font-weight: lighter;
+  line-height: 1.3em;
 }
 
 /* --- FOOTER --- */
@@ -337,16 +443,42 @@ footer {
   align-items: center;
   justify-content: space-evenly;
 
-  padding: 3em 2em 2em;
-  margin: 2em 2em;
+  grid-column: 1 / 4;
+  grid-row: 9 / 10;
+
+  padding: 2em 2em;
+  margin: 3em 2em 2em 2em;
+
+  font-weight: lighter;
+}
+
+footer > p {
+  padding: 1em 0 1em 0;
+  font-size: 1.1em;
+  font-weight: lighter;
+}
+
+a {
+  color: rgb(168, 201, 205);
+  font-size: 0.9em;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 ul {
   display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+li {
+  align-self: center;
+  font-size: 0.9em;
 }
 
 .logo {
-  max-width: 2em;
+  max-width: 1.7em;
+  max-height: 1.7em;
   margin: 1em 1em;
 }
 
