@@ -1,20 +1,11 @@
 /* 
-COLOR THEMES
+COLOR THEME:
 
--- green: 
-
-#365959;
-#798C8C;
-#26403D;
-#B0BFBE;
-#365953;
-
--- blue: 
-
-#033F73;
-#2F4659;
-#024873;
-#023859;
+#033F73
+#2F4659
+#024873
+#023859
+#0E3964
 #A1C9CD; (font)
 
 
@@ -193,6 +184,12 @@ h1 {
   font-size: 2em;
 }
 
+div {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: stretch;
+}
+
 input,
 button,
 textarea {
@@ -232,10 +229,10 @@ form {
 
 /* custom linear gradient */
 .form-submit-button {
-  background: linear-gradient(#2f4659, #435b6ac4);
+  background: linear-gradient(#0e3964, 80%, #435b6ac4);
   border: none;
-  box-shadow: rgb(50 50 105 / 15%) 0px 2px 5px 0px,
-    rgb(0 0 0 / 5%) 0px 1px 1px 0px;
+  box-shadow: rgb(104 103 103 / 25%) 0px -8px 27px 5px,
+    rgba(196, 196, 196, 0.3) 0px 8px 8px -8px;
 
   padding: 2em 1em;
   color: #fff;
@@ -245,10 +242,12 @@ form {
 }
 
 .form-reset-button {
-  background: linear-gradient(#2f4659, #435b6ac4);
+  background: linear-gradient(#0e3964, 80%, #435b6ac4);
   border: none;
-  box-shadow: rgb(50 50 105 / 15%) 0px 2px 5px 0px,
-    rgb(0 0 0 / 5%) 0px 1px 1px 0px;
+  /* box-shadow: rgb(50 50 105 / 15%) 0px 2px 5px 0px,
+    rgb(0 0 0 / 5%) 0px 1px 1px 0px; */
+  box-shadow: rgb(104 103 103 / 25%) 0px -8px 27px 5px,
+    rgba(196, 196, 196, 0.3) 0px 8px 8px -8px;
 
   padding: 1em;
   color: #fff;
@@ -259,7 +258,7 @@ form {
 
 #familia {
   background: transparent;
-  color: #fff;
+  color: #a1c9cd70;
   font-weight: lighter;
 
   border-radius: 0.5em;
@@ -269,12 +268,6 @@ form {
 select::selection {
   font-weight: bolder;
   color: #fff;
-}
-
-div {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: stretch;
 }
 
 textarea {
@@ -294,6 +287,18 @@ textarea {
 #fonts,
 #border {
   padding: 0 1px;
+}
+
+/* [type="range"] {
+  fill: #e30000;
+  stroke: none;
+  max-width: fit-content;
+} */
+
+#volume {
+  fill: #a1c9cd;
+  stroke: none;
+  max-width: fit-content;
 }
 
 /* --- ELEMENTS in grid --- */
@@ -423,8 +428,10 @@ textarea {
   grid-row: 7 / 8;
 }
 
-[placeholder] {
+::placeholder {
   font-weight: lighter;
+  font-size: smaller;
+  color: #a1c9cd70;
 }
 
 label {
@@ -447,6 +454,7 @@ input {
 h2 {
   margin: 1em auto;
   padding: 1em 1em;
+  width: 100%;
 
   text-transform: uppercase;
   letter-spacing: 0.2em;
