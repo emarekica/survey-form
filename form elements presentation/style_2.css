@@ -188,9 +188,11 @@ h1 {
 div {
   display: flex;
   flex-flow: column wrap;
+  /* vertical axis */
   justify-content: flex-start;
+  /* horizontal axis */
   align-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding: 0;
 }
 
@@ -253,7 +255,7 @@ form {
   box-shadow: rgb(104 103 103 / 25%) 0px -8px 27px 5px,
     rgba(196, 196, 196, 0.3) 0px 8px 8px -8px;
 
-  padding: 1em;
+  padding: 2em 1em;
   color: #fff;
   width: 15em;
   letter-spacing: 0.3em;
@@ -278,14 +280,27 @@ textarea {
   background: transparent;
 }
 
+textarea:focus {
+  border: 1px solid rgba(217, 217, 217, 0.3);
+  outline: 2px solid #a1c9cd88;
+
+  color: #fff;
+  font-family: "Maven Pro", sans-serif;
+}
+
+#search-field {
+  margin-top: 0;
+  width: 100%;
+}
+
 #search-field-button {
   border: none;
   box-shadow: rgb(50 50 105 / 15%) 0px 2px 5px 0px,
     rgb(0 0 0 / 5%) 0px 1px 1px 0px;
   background: transparent;
 
-  /* padding: 1em;
-  margin: 1em 1em; */
+  padding: 1em 1em;
+  /* margin: 1em 1em; */
   width: 100%;
 
   color: #fff;
@@ -294,8 +309,7 @@ textarea {
 #background,
 #fonts,
 #border {
-  padding: 0 1px;
-  width: 100%;
+  width: 12em;
 }
 
 /* [type="range"] {
@@ -310,10 +324,38 @@ textarea {
   max-width: 100%;
 }
 
-select,
+#dropdown {
+  margin-right: 1em;
+  border-radius: 0.5em;
+  background: transparent;
+  color: #fff;
+  font-family: "Maven Pro", sans-serif;
+}
+
 textarea {
   width: 100%;
   border-color: #a1c9cd;
+}
+
+#your-input {
+  padding: 0.5em 0 0 0.5em;
+}
+
+select {
+  width: 100%;
+  border: 1px solid rgba(217, 217, 217, 0.3);
+  padding: 0.2em 0.2em;
+}
+
+select:focus {
+  border: 1px solid rgba(217, 217, 217, 0.3);
+  outline: 2px solid #a1c9cd88;
+}
+
+/* custom file upload button */
+
+input[type="file"] {
+  opacity: 0.5;
 }
 
 /* --- ELEMENTS in grid --- */
@@ -451,7 +493,8 @@ textarea {
 
 input {
   margin: 1em 0 1em 0;
-  width: 100%;
+  padding: 0.5em 0.5em;
+  width: 90%;
 
   background: transparent;
   border: 1px solid rgba(217, 217, 217, 0.3);
@@ -459,6 +502,11 @@ input {
   color: #fff;
   letter-spacing: 0.1em;
   font-weight: normal;
+}
+
+input:focus {
+  border: 1px solid rgba(217, 217, 217, 0.3);
+  outline: 2px solid #a1c9cd88;
 }
 
 h2 {
@@ -472,8 +520,73 @@ h2 {
   line-height: 1.3em;
 }
 
+h2.e-mail,
+#date-picker,
+#start-time-picker,
+#end-time-picker,
+#datetime-local-picker,
+#volume {
+  margin-top: 0;
+}
+
+h2.searchfield,
+h2.date-picker {
+  margin-bottom: 1em;
+}
+
 label {
   margin-bottom: 1.5em;
+  font-size: 0.9em;
+}
+
+label.pass {
+  margin: 0.5em 0 1em 0;
+}
+
+/* fieldset {
+  display: grid;
+  grid-template-columns: 2 (repeat, 1fr);
+  grid-template-rows: auto;
+} */
+
+fieldset div {
+  flex-flow: row nowrap;
+  align-items: baseline;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+}
+
+label[for="blue"],
+label[for="green"],
+label[for="yellow"],
+label[for="orange"],
+label[for="red"],
+label[for="violet"],
+label[for="brown"],
+label[for="black"],
+label[for="white"] {
+  margin-bottom: 0.7em;
+  accent-color: #556273;
+}
+
+fieldset div:first-of-type {
+  margin-top: 2em;
+}
+
+#radio > div {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+}
+
+input#coffee,
+input#tea,
+input#lemon-water,
+input#none {
+  margin: 0;
+  accent-color: #556273;
 }
 
 /* --- FOOTER --- */
@@ -544,4 +657,10 @@ input:required:valid {
     border-color:green;
 } */
 
-/* select all divs that are children of fieldset */
+/* select all divs that are children of fieldset
+
+fieldset div {}
+
+fieldset>div
+
+*/

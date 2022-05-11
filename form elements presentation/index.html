@@ -36,7 +36,7 @@
 
         <!-- e-mail -->
         <div class="email">
-          <h2>E-mail with one input</h2>
+          <h2 class="e-mail">E-mail with one input</h2>
           <label for="email">E-mail:</label>
           <input
             type="email"
@@ -91,7 +91,7 @@
         <!-- PASSWORD -->
         <div class="password">
           <h2>Password</h2>
-          <label for="pass">Enter your password:</label>
+          <label class="pass" for="pass">Enter your password:</label>
           <input
             type="password"
             id="pass"
@@ -108,7 +108,7 @@
 
         <!-- search field -->
         <div class="search">
-          <h2>Search field</h2>
+          <h2 class="searchfield">Search field</h2>
           <label for="search-field"></label>
           <input type="search" id="search-field" name="question" />
 
@@ -145,7 +145,7 @@
 
         <!-- date picker -->
         <div class="datepicker">
-          <h2>Date picker</h2>
+          <h2 class="date-picker">Date picker</h2>
           <label for="date-picker"></label>
           <input
             type="date"
@@ -187,7 +187,7 @@
 
         <!-- datetime-local picker -->
         <div class="datetime">
-          <h2>Date/time local picker</h2>
+          <h2>Date/time picker</h2>
           <label for="datetime-local-picker"></label>
           <input
             type="datetime-local"
@@ -250,7 +250,7 @@
           <fieldset>
             <legend>Select your 3 prefered colors/shade</legend>
 
-            <div>
+            <div class="blue-checkbox">
               <label for="blue">blue</label>
               <input type="checkbox" id="blue" name="blue" checked />
             </div>
@@ -296,31 +296,29 @@
                   <h2>Radio button</h2>
                   <fieldset id="radio">
                     <legend>Select your morning favourite drink:</legend>
-                    <div>
-                      <input type="radio" id="coffee" value="" name="drink" checked />
+                    <div class="coffee">
                       <label for="coffee">coffee</label>
+                      <input type="radio" id="coffee" value="" name="drink" checked />
                     </div>
-                    <div>
-                      <input type="radio" id="tea" value="tea" name="drink" />
+                    <div class="tea">
                       <label for="tea">tea</label>
+                      <input type="radio" id="tea" value="tea" name="drink" />
                     </div>
-                    <div>
+                    <div class="lemon-water">
+                      <label for="lemon-water">lemon-water</label>
                       <input
                       type="radio"
                       id="lemon-water"
                       value="lemonwater"
                       name="drink"
                       />
-                      <label for="lemon-water">lemon water</label>
                     </div>
                     <div>
-                      <input type="radio" id="none" value="none" name="drink" />
                       <label for="none">none</label>
+                      <input type="radio" id="none" value="none" name="drink" />
                     </div>
                   </fieldset>
-                  <br />
-        
-      
+                        
                 </div>
                 <br /><br />
 
@@ -502,3 +500,5 @@
     </footer>
   </body>
 </html>
+
+<!-- drag & drop: https://jsfiddle.net/j40xvkb3/ -->
