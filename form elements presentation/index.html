@@ -12,7 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style_2.css" />
     <title>Form Elements Presentation</title>
   </head>
 
@@ -161,20 +162,20 @@
         <!-- time picker -->
         <div class="timepicker">
           <h2>Time picker</h2>
-          <label for="time-picker">Pick start time:</label>
+          <label for="start-time-picker">Pick start time:</label>
           <input
             type="time"
-            id="time-picker"
+            id="start-time-picker"
             name="time"
             min="00:00"
             max="23:59"
           />
           <br /><br />
 
-          <label for="time-picker">Pick end time:</label>
+          <label for="end-time-picker">Pick end time:</label>
           <input
             type="time"
-            id="time-picker"
+            id="end-time-picker"
             name="time"
             min="00:00"
             max="23:59"
@@ -416,21 +417,21 @@
       <div class="fileupload"> 
         <h2>File upload / File picker</h2>
         <p>
-          <label for="uploads">Chose your profile image:</label>
+          <label for="imgupload">Chose your profile image:</label>
           <input
             type="file"
-            id="uploads"
-            name="uploads"
+            id="imgupload"
+            name="upload"
             accept=".jpg, .jpeg, .png, .svg, .gif"
           />
         </p>
         <br />
 
         <p>
-          <label for="text">Pick a text file to upload:</label>
+          <label for="textupload">Pick a text file to upload:</label>
           <input
             type="file"
-            id="text"
+            id="textupload"
             name="text"
             accept=".text, .pdf, .doc, .docx"
             multiple

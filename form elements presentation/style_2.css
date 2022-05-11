@@ -1,14 +1,14 @@
 /* 
 COLOR THEME:
 
--- blue:
+-- gray:
 
-#033F73
-#2F4659
-#024873
-#023859
-#0E3964
-#A1C9CD (font)
+#D9D7D8
+#D0CECF
+#98A0A6
+#6F7985
+#556273
+#3B4859
 
 */
 
@@ -189,7 +189,7 @@ div {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
-  /* align-items: center; */
+  align-items: baseline;
   padding: 0;
 }
 
@@ -198,6 +198,12 @@ label,
 input {
   margin: 0;
   padding: 0;
+}
+
+input,
+button,
+textarea {
+  border-radius: 0.5em;
 }
 
 form {
@@ -283,17 +289,19 @@ textarea {
   box-shadow: rgb(50 50 105 / 15%) 0px 2px 5px 0px,
     rgb(0 0 0 / 5%) 0px 1px 1px 0px;
   background: transparent;
-  padding: 1em;
+
+  /* padding: 1em;
+  margin: 1em 1em; */
+  width: 100%;
+
   color: #fff;
-  width: 90%;
-  margin: 1em 1em;
 }
 
 #background,
 #fonts,
 #border {
   padding: 0 1px;
-  width: 80%;
+  width: 100%;
 }
 
 /* [type="range"] {
@@ -305,7 +313,7 @@ textarea {
 #volume {
   fill: #a1c9cd;
   stroke: none;
-  max-width: fit-content;
+  max-width: 100%;
 }
 
 select,
@@ -447,14 +455,10 @@ textarea {
   color: #a1c9cd70;
 }
 
-label {
-  margin: 1em 1em;
-}
-
 input {
-  margin: 1em 1em;
-  padding: 0.5em 0.5em;
-  width: 90%;
+  /* margin: 1em 1em;
+  padding: 0.5em 0.5em; */
+  width: 100%;
 
   background: transparent;
   border: 1px solid rgba(217, 217, 217, 0.3);
@@ -465,8 +469,8 @@ input {
 }
 
 h2 {
-  margin: 1em auto;
-  padding: 1em 1em;
+  /* margin: 1em auto;
+  padding: 1em 1em; */
   width: 100%;
 
   text-transform: uppercase;
