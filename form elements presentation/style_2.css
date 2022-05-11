@@ -188,15 +188,9 @@ h1 {
 div {
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-content: space-between;
   align-items: baseline;
-  padding: 0;
-}
-
-h2,
-label,
-input {
-  margin: 0;
   padding: 0;
 }
 
@@ -456,8 +450,7 @@ textarea {
 }
 
 input {
-  /* margin: 1em 1em;
-  padding: 0.5em 0.5em; */
+  margin: 1em 0 1em 0;
   width: 100%;
 
   background: transparent;
@@ -469,8 +462,7 @@ input {
 }
 
 h2 {
-  /* margin: 1em auto;
-  padding: 1em 1em; */
+  margin: 1em 0 2em 0;
   width: 100%;
 
   text-transform: uppercase;
@@ -478,6 +470,10 @@ h2 {
   text-align: center;
   font-weight: lighter;
   line-height: 1.3em;
+}
+
+label {
+  margin-bottom: 1.5em;
 }
 
 /* --- FOOTER --- */
@@ -547,3 +543,5 @@ li {
 input:required:valid {
     border-color:green;
 } */
+
+/* select all divs that are children of fieldset */
