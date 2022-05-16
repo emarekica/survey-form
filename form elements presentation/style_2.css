@@ -162,7 +162,7 @@ body {
   background-size: 100% 100%;
   background-attachment: fixed;
 
-  color: rgb(168, 201, 205);
+  color: rgb(200, 234, 237);
   font-family: "Maven Pro", sans-serif;
 
   margin: 0 3em 2em 3em;
@@ -202,6 +202,10 @@ textarea {
   border-radius: 0.5em;
 }
 
+main {
+  margin-bottom: 2em;
+}
+
 form {
   display: grid;
   grid-template-columns: repeat(3, 30%);
@@ -211,7 +215,7 @@ form {
 
   justify-items: stretch;
   align-items: stretch;
-  margin-top: 2em;
+  margin: 2em 0 4em 0;
   padding-left: 4em;
 }
 
@@ -222,6 +226,7 @@ form {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin-bottom: 3em;
 }
 
 .form-submit-button,
@@ -358,11 +363,13 @@ input[type="file"] {
   opacity: 0.5;
 }
 
-.checkboxes {
+.checkboxes,
+.radiobuttons {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   grid-template-rows: auto;
-  justify-items: center;
+  justify-items: end;
+  padding: 1.1em 2.4em 0 2em;
 }
 
 legend {
@@ -497,9 +504,8 @@ legend {
 }
 
 ::placeholder {
-  font-weight: lighter;
   font-size: smaller;
-  color: #a1c9cd70;
+  color: #ccdee0e5;
 }
 
 input {
@@ -586,12 +592,6 @@ fieldset div:first-of-type {
   margin-top: 2em;
 }
 
-#radio > div {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: baseline;
-}
-
 input#coffee,
 input#tea,
 input#lemon-water,
@@ -624,7 +624,7 @@ footer {
   grid-row: 9 / 10;
 
   padding: 2em 2em;
-  margin: 0 2em 2em 2em;
+  margin: 4em 2em 4em 2em;
 
   font-weight: lighter;
 }
