@@ -211,7 +211,7 @@ form {
 
   justify-items: stretch;
   align-items: stretch;
-  margin: 2em 0;
+  margin-top: 2em;
   padding-left: 4em;
 }
 
@@ -356,6 +356,17 @@ select:focus {
 
 input[type="file"] {
   opacity: 0.5;
+}
+
+.checkboxes {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+legend {
+  text-align: center;
 }
 
 /* --- ELEMENTS in grid --- */
@@ -613,7 +624,7 @@ footer {
   grid-row: 9 / 10;
 
   padding: 2em 2em;
-  margin: 2em 2em 2em 2em;
+  margin: 0 2em 2em 2em;
 
   font-weight: lighter;
 }
