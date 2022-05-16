@@ -301,8 +301,8 @@ textarea:focus {
 #search-field-button {
   border: none;
   /* background-color: rgba(51, 59, 76, 0.179); */
-  box-shadow: rgb(104 103 103 / 25%) 2px -16px 27px 5px,
-    rgba(196, 196, 196, 0.3) 2px 8px 16px -8px;
+  box-shadow: rgba(187, 187, 187, 0.25) 2px 8px 27px 5px,
+    rgba(222, 222, 222, 0.346) 2px 8px 16px -8px;
   background: transparent;
 
   padding: 1em 1em;
@@ -382,6 +382,7 @@ input[type="file"] {
   grid-template-rows: auto;
   justify-items: end;
   padding: 1.1em 2em 0 1em;
+  margin: 2em 2em 0 0;
 }
 
 /* customized radio-buttons */
