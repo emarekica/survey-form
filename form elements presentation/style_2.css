@@ -300,8 +300,9 @@ textarea:focus {
 
 #search-field-button {
   border: none;
-  box-shadow: rgb(50 50 105 / 15%) 0px 2px 5px 0px,
-    rgb(0 0 0 / 5%) 0px 1px 1px 0px;
+  /* background-color: rgba(51, 59, 76, 0.179); */
+  box-shadow: rgb(104 103 103 / 25%) 2px -16px 27px 5px,
+    rgba(196, 196, 196, 0.3) 2px 8px 16px -8px;
   background: transparent;
 
   padding: 1em 1em;
@@ -309,9 +310,16 @@ textarea:focus {
   width: 100%;
 
   color: #fff;
+  text-transform: uppercase;
 }
 
-#background,
+#search-field-button:focus {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  background: #556273;
+}
+
+#search-field-button::after #background,
 #fonts,
 #border {
   width: 12em;
@@ -372,6 +380,7 @@ input[type="file"] {
   padding: 1.1em 2em 0 1em;
 }
 
+/* customized radio-buttons */
 .radio-input {
   display: none;
 }
