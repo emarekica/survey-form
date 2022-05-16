@@ -288,26 +288,34 @@
                 <!-- radio-button -->
                 <div class="radio">
                   <h2>Radio button</h2>
+
                   <fieldset id="radio">
                     <legend>Select your morning favourite drink:</legend>
                     
                     <div class="radiobuttons">
-                      <label for="coffee">coffee</label>
-                      <input type="radio" id="coffee" value="" name="drink" checked />
+
+                      <span>coffee</span>
+                      <input type="radio" id="coffee" value="" name="drink" class="radio-input" checked />
+                      <label for="coffee" class="radio-label"></label>
                     
-                      <label for="tea">tea</label>
-                      <input type="radio" id="tea" value="tea" name="drink" />
+                      <span>tea</span>
+                      <input type="radio" id="tea" value="tea" name="drink" class="radio-input"/>
+                      <label for="tea" class="radio-label"></label>
                     
-                      <label for="lemon-water">lemon-water</label>
+                      <span>lemon-water</span>
                       <input
                       type="radio"
                       id="lemon-water"
                       value="lemonwater"
                       name="drink"
+                      class="radio-input"
                       />
+                      <label for="lemon-water" class="radio-label"></label>
                     
-                      <label for="none">none</label>
-                      <input type="radio" id="none" value="none" name="drink" />
+                      <span>none</span>
+                      <input type="radio" id="none" value="none" name="drink" class="radio-input"/>
+                      <label for="none" class="radio-label"></label>
+
                     </div>
 
                   </fieldset>

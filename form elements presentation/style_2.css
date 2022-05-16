@@ -369,7 +369,58 @@ input[type="file"] {
   grid-template-columns: repeat(2, 2fr);
   grid-template-rows: auto;
   justify-items: end;
-  padding: 1.1em 2.4em 0 2em;
+  padding: 1.1em 2em 0 1em;
+}
+
+.radio-input {
+  display: none;
+}
+
+.radio-label {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.5em;
+}
+
+.radio-label::before,
+.radio-label::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  display: block;
+  transition: all 0.1s;
+}
+
+.radio-label::before {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+}
+.radio-label::after {
+  width: 25px;
+  height: 25px;
+  background: #f7faff4d;
+}
+/* input + label */
+/* .radio-input:checked + .radio-label::after {
+  animation: ripple 0.2s;
+} */
+.radio-input:checked + .radio-label::before {
+  transform: scale(1);
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(1);
+  }
 }
 
 legend {
@@ -586,10 +637,6 @@ label[for="black"],
 label[for="white"] {
   margin-bottom: 0.7em;
   accent-color: #556273;
-}
-
-fieldset div:first-of-type {
-  margin-top: 2em;
 }
 
 input#coffee,
