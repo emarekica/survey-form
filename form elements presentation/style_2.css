@@ -341,7 +341,7 @@ textarea:focus {
   margin-right: 1em;
   border-radius: 0.5em;
   background: transparent;
-  color: #fff;
+  color: #7d999c;
   font-family: "Maven Pro", sans-serif;
 }
 
@@ -363,6 +363,10 @@ select {
 select:focus {
   border: 1px solid rgba(217, 217, 217, 0.3);
   outline: 2px solid #a1c9cd88;
+}
+
+small {
+  font-size: 0.7em;
 }
 
 /* custom file upload button */
