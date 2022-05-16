@@ -8,6 +8,22 @@ Add [Floating label](https://itnext.io/how-to-build-a-floating-label-input-field
 
 ---
 
+<br>
+
+## Customized elements
+
+<br>
+
+- [HiCoders Codepen](https://codepen.io/hicoders/pens/public?cursor=ZD0wJm89MSZwPTEmdj00NzgwNjI3Ng==)
+
+- [HiCoders GitHub](https://github.com/hicodersofficial)
+
+- [HiCoders YouTube](https://www.youtube.com/channel/UC1hooNUnK4Ivk5KBaT5PKIg/videos)
+
+<br><br>
+
+---
+
 ## FORM ELEMENTS
 
 **Existing**
