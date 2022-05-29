@@ -48,22 +48,6 @@ drop.addEventListener("drop", (e) => {
   upload();
 });
 
-// let fileInput = document.querySelector("input[type='file']");
-// let filenameContainer = document.getElementById("#filename");
-// let dropzone = document.querySelector(".dropzone");
-
-// fileInput.addEventListener("change", function () {
-//   filenameContainer.innerText = fileInput.value.split("\\").pop();
-// });
-
-// fileInput.addEventListener("dragenter", function () {
-//   dropzone.classList.add("dragover");
-// });
-
-// fileInput.addEventListener("dragleave", function () {
-//   dropzone.classList.remove("dragover");
-// });
-
 // ----
 // use sessionStorage
 // make validation

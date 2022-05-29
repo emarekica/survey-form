@@ -872,30 +872,6 @@ input[type="color"] {
   padding-left: 2em;
 }
 
-/* .dropzone {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ccc;
-  border-radius: 0.5em;
-  padding: 1em;
-  color: #3b4859;
-  font-size: 0.9em;
-  text-align: center;
-}
-
-label[for="dragdrop"] {
-  width: 94%;
-}
-
-#dragdrop {
-  display: none;
-}
-
-div.dragover {
-  background-color: #f9bebd;
-} */
-
 /* --- FOOTER --- */
 
 footer {
