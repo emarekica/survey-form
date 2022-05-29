@@ -408,7 +408,8 @@
         <div class="color">
           <h2>Color selector</h2>
           <label>Select your main theme colors:</label>
-          <div>
+          
+          <div class="pick-color">
             <label for="background"> background</label>
             <input
               type="color"
@@ -418,7 +419,8 @@
               required
             />
           </div>
-          <div>
+
+          <div class="pick-fonts">
             <label for="fonts"> fonts</label>
             <input
               type="color"
@@ -428,7 +430,8 @@
               required
             />
           </div>
-          <div>
+
+          <div class="pick-border">
             <label for="border"> border</label>
             <input
               type="color"
@@ -480,7 +483,18 @@
             multiple
           />
         </p>
-        
+        <br />
+
+        <!-- drag & drop -->
+        <p>
+          <label for="dragdrop">
+            <div class="dropzone">Click or drop something here</div>
+          </label>
+          <input type="file" id="dragdrop" name="dragdrop"/>
+          </label>
+          <p id="filename"></p>
+        </p>
+
         </div>
         <br /><br />
 
@@ -546,6 +560,8 @@
         </li>
       </ul>
     </footer>
+
+    <script href="fep.js"></script>
   </body>
 </html>
 
