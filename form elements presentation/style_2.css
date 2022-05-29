@@ -182,7 +182,13 @@ header {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3em;
+  color: #f9bebd;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-weight: bolder;
+  /* x, y, blur radius, color */
+  text-shadow: 45px 10px 80px #b7b6b6, -45px -10px 80px #ffffff;
 }
 
 div {
@@ -701,8 +707,9 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   text-align: center;
-  font-weight: lighter;
+  font-weight: bold;
   line-height: 1.3em;
+  color: #facfce;
 }
 
 h2.e-mail,
