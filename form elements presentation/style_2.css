@@ -375,19 +375,113 @@ input[type="file"] {
   opacity: 0.5;
 }
 
-.checkboxes,
+/* customized check-box */
+
+.checkboxes {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-right: 2em;
+  justify-items: end; */
+
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: auto;
+  justify-items: start;
+  padding: 1.1em 0 0 1em;
+  margin: 2em 2em 0 0;
+  column-gap: 1em;
+}
+
+.check-input {
+  display: none;
+}
+
+.check-label {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 10px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  top: 0.3em;
+  margin: 1em;
+
+  /* margin: 2em 0 0.5em 1.5em;
+  padding: 3px;
+  transition: 0.3s all;
+  top: 2.4em;
+  left: 2em; */
+}
+
+span {
+  /* right: 1em; */
+  transform: translateX(-1em);
+}
+
+.check-label svg {
+  width: 20px;
+  height: 20px;
+}
+
+.check-label::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  display: block;
+
+  background: #78787966;
+  /* z-index: -1; */
+}
+
+.check-input:checked + .check-label svg path {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  stroke: #fff;
+  stroke-width: 3;
+  animation: check 2s forwards;
+}
+
+/* .check-input:checked + .check-label::before {
+  animation: ripple 0.3s;
+} */
+
+/* .check-input:checked + .check-label::before {
+  transform: scale(1);
+} */
+
+@keyframes check {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* 
+.radiobuttons (grid)
+  span   
+  .radio-label
+
+.checkboxes (flex)
+  span
+  .check-label
+*/
+
+/* customized radio-buttons */
 .radiobuttons {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   grid-template-rows: auto;
   justify-items: end;
-  padding: 1.1em 2em 0 1em;
+  padding: 1.1em 0 0 1em;
   margin: 2em 2em 0 0;
 }
 
-/* customized check-box */
-
-/* customized radio-buttons */
 .radio-input {
   display: none;
 }
@@ -395,17 +489,17 @@ input[type="file"] {
 .radio-label {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 10px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   background: transparent;
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
   cursor: pointer;
   border-radius: 50%;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   /* bottom: 0.5em; */
-  top: 0.5em;
+  top: 0.3em;
   margin-left: 1em;
 }
 
@@ -655,8 +749,9 @@ label[for="violet"],
 label[for="brown"],
 label[for="black"],
 label[for="white"] {
-  margin-bottom: 0.7em;
+  margin-bottom: 1em;
   accent-color: #556273;
+  padding: 0.15em;
 }
 
 input#coffee,
