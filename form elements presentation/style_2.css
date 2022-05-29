@@ -215,7 +215,7 @@ form {
 
   justify-items: stretch;
   align-items: stretch;
-  margin: 2em 0 4em 0;
+  margin-top: 2em;
   padding-left: 4em;
 }
 
@@ -226,7 +226,7 @@ form {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-bottom: 3em;
+  /* margin-bottom: 3em; */
 }
 
 .form-submit-button,
@@ -295,7 +295,7 @@ textarea:focus {
 
 #search-field {
   margin-top: 0;
-  width: 100%;
+  width: 50%;
 }
 
 #search-field-button {
@@ -307,7 +307,7 @@ textarea:focus {
 
   padding: 1em 1em;
   /* margin: 1em 1em; */
-  width: 100%;
+  width: 50%;
 
   color: #fff;
   text-transform: uppercase;
@@ -541,6 +541,13 @@ legend {
   text-align: center;
 }
 
+div.search {
+  margin: 0 3em 0 4em;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 4em 2em 4em;
+}
+
 /* --- ELEMENTS in grid --- */
 
 .name,
@@ -565,7 +572,7 @@ legend {
   background-color: rgba(227, 232, 242, 0.18);
   box-shadow: rgba(104, 103, 103, 0.25) 0px 13px 27px -5px,
     rgba(196, 196, 196, 0.3) 0px 8px 16px -8px;
-  margin: 0.2em 0.2em;
+  /* margin: 0.2em 0.2em; */
   padding: 2em 2em;
   border-radius: 0.5em;
 }
@@ -599,7 +606,7 @@ legend {
   grid-row: 2 / 3;
 }
 
-.search {
+.phonenumber {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
 }
@@ -609,36 +616,37 @@ legend {
   grid-row: 3 / 4;
 }
 
-.datepicker {
+.radio {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
 }
+
 .timepicker {
   grid-column: 3 / 4;
   grid-row: 3 / 4;
 }
 
-.datetime {
+.datepicker {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
 }
 
-.dropdown {
+.datetime {
   grid-column: 2 / 3;
   grid-row: 4 / 5;
 }
 
-.phonenumber {
+.dropdown {
   grid-column: 3 / 4;
   grid-row: 4 / 5;
 }
 
 .checkbox {
   grid-column: 1 / 2;
-  grid-row: 5 / 6;
+  grid-row: 5 / 7;
 }
 
-.radio {
+.slider {
   grid-column: 2 / 3;
   grid-row: 5 / 6;
 }
@@ -646,11 +654,6 @@ legend {
 .color {
   grid-column: 3 / 4;
   grid-row: 5 / 6;
-}
-
-.slider {
-  grid-column: 1 / 2;
-  grid-row: 6 / 7;
 }
 
 .minmax {
@@ -786,7 +789,7 @@ footer {
   grid-row: 9 / 10;
 
   padding: 2em 2em;
-  margin: 4em 2em 4em 2em;
+  margin: 0 3em 2em 4em;
 
   font-weight: lighter;
 }

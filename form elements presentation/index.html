@@ -24,6 +24,17 @@
     <br />
 
     <main>
+
+      <!-- search field -->
+      <div class="search">
+        <h2 class="searchfield">Search field</h2>
+
+        <label for="search-field"></label>
+        <input type="search" id="search-field" name="question" />
+        <button id="search-field-button">Search</button>
+      </div>
+      <br />
+
       <form method="post" enctype="multipart/form-data">
         <!-- name -->
         <div class="name">
@@ -102,18 +113,6 @@
             pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
             required
           />
-
-        </div>
-        <br /><br />
-
-        <!-- search field -->
-        <div class="search">
-          <h2 class="searchfield">Search field</h2>
-          <label for="search-field"></label>
-          <input type="search" id="search-field" name="question" />
-
-          <button id="search-field-button">Search</button>
-          <br />
 
         </div>
         <br /><br />
@@ -455,6 +454,8 @@
         </div>
       <br /><br /><br />
 
+
+
       <!-- FILE UPLOAD / File picker -->
       <div class="fileupload"> 
         <h2>File upload / File picker</h2>
@@ -491,6 +492,9 @@
          <button class="form-reset-button" type="reset">RESET</button>
       </div>
       </form>
+
+    
+      <br /><br />
     </main>
     <br />
 
