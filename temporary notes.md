@@ -2,7 +2,17 @@
 
 <br><br>
 
-Add [Floating label](https://itnext.io/how-to-build-a-floating-label-input-field-f9b21669fe2f) to one of the text-area fields.
+- rearrange CSS elements
+
+- update color palette
+
+- make mockup img, add to readme
+
+- make responsive
+
+- Add [Floating label](https://itnext.io/how-to-build-a-floating-label-input-field-f9b21669fe2f) to one of the text-area fields.
+
+- create SCSS
 
 <br><br>
 
@@ -26,43 +36,47 @@ Add [Floating label](https://itnext.io/how-to-build-a-floating-label-input-field
 
 ## FORM ELEMENTS
 
-**Existing**
-
 <br>
 
-- name
+1. search field
 
-- email
+2. form
 
-- numeric field (min/max)
+   - text input
 
-- dropdown menu
+   - email (1 input)
 
-- radio-button
+   - email (multiple inputs)
 
-- check-box
+   - multiple selection scroll
 
-- text-area
+   - password
 
-- file upload / [file picker](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file)
+   - phone number
 
-<br><br>
+   - text area
 
-**Add:**
+   - radio button
 
-- password
+   - time
 
-- search field
+   - date
 
-- phone number field
+   - date/time
 
-- URL field
+   - drop-down menu
 
-- slider control
+   - color selector
 
-- date & time pickers
+   - number min/max
 
-- color picker control
+   - url
+
+   - file upload
+
+   - drag ’n’ drop
+
+3. submit / reset
 
 <br><br>
 
@@ -117,3 +131,11 @@ https://dribbble.com/anhek/collections/163664-Webdesign
   <br><br>
 
 - [UI PSEUDO CLASSES](https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes)
+
+<br><br>
+
+- [file picker](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file)
+
+- [drag 'n' drop](https://github.com/hicodersofficial/custom-html-css-js-widgets/tree/main/dropdown)
+
+- [drag 'n' drop 2](https://jsfiddle.net/j40xvkb3/)

@@ -43,6 +43,29 @@
 
 <br>
 
+select all divs that are children of fieldset:
+<br>
+
+    fieldset div {}
+    fieldset>div
+
+<br><br>
+
+selectors for password chech styling:
+<br>
+
+    input:required:invalid
+
+    input:focus:invalid {
+        border-color: red;
+    }
+
+    input:required:valid {
+        border-color:green;
+    }
+
+<br><br>
+
 ### `name` attribute
 
 <br>
@@ -92,7 +115,7 @@ Elements that it can be associated with:
 
 <br><br>
 
-### `enxtype`
+### `enctype`
 
 <br>
 
@@ -200,34 +223,13 @@ You can use `background-attachment: fixed;` to make the background image scroll 
 
 <br>
 
-## 3. Mockup
-
-<br>
-
-Form elements presentation
-<br>
-
-![form elements presentation](img/form-elements-presentation.jpeg)
-<br><br>
-
-Responsive form
-<br>
-
-![]()
-
-<br><br>
-
----
-
-<br>
-
 ## 4. Improvement ideas
 
 <br>
 
 1. Make form open as a modal + background blur
 
-2. Enable IMG user profile image upload + drag&drop
+[x] Enable IMG user profile image upload + drag&drop
 
 3. Add "?" and "!" circled icon for more info beside label text with floating window when clicked or hovered
 
