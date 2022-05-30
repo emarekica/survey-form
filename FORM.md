@@ -35,6 +35,14 @@
 
 <br><br>
 
+### Problem with horizontal scrollbars
+
+ <br>
+
+[Page height and width](https://www.freecodecamp.org/news/html-page-width-height/)
+
+<br><br>
+
 ---
 
 <br>
