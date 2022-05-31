@@ -152,7 +152,8 @@ table {
 /* --- GENERAL --- */
 
 html {
-  height: auto;
+  height: 100%;
+  width: 100%;
 }
 
 body {
@@ -162,10 +163,10 @@ body {
   /* margin: 0 3em 2em 3em; */
   min-height: 90vh;
 
-  /* background-image: url(https://images.unsplash.com/photo-1547623641-d2c56c03e2a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80); */
-
   background-attachment: fixed;
-  background-image: url(https://images.unsplash.com/photo-1604339454409-701c5278c546?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z3JhZGllbnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60);
+  background-image: url(../img/background.png);
+  /* background-image: url(https://images.unsplash.com/photo-1604339454409-701c5278c546?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z3JhZGllbnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60); */
+  /* background-image: url(https://images.unsplash.com/photo-1547623641-d2c56c03e2a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80); */
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
@@ -941,85 +942,12 @@ li {
   max-height: 1.7em;
 }
 /* --- RESPONSIVENESS --- */
+/* --------- tablet ---------  */
 
-/* --------- table ---------  */
+/*@media (max-width: 665px) {
 
-@media (max-width: 665px) {
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
 
-  html,
-  body {
-    overflow-x: hidden;
-  }
-
-  html {
-    height: auto;
-  }
-
-  body {
-    min-height: 100vh;
-  }
-
-  h1 {
-    font-size: 2.3em;
-    padding-left: 4em;
-    padding-right: 4em;
-    text-align: center;
-    line-height: 1.3em;
-    margin: 0;
-  }
-
-  h2,
-  label {
-    font-size: 0.8em;
-  }
-
-  ::placeholder {
-    font-size: 0.75em;
-  }
-
-  body {
-    display: grid;
-    grid-template-rows: repeat(5, auto);
-    grid-template-columns: auto;
-    margin: 0;
-  }
-
-  header {
-    grid-column: 1 / 1;
-    grid-row: 1 / 2;
-    margin: 0;
-  }
-
-  div.search {
-    grid-column: 1 / 1;
-    grid-row: 2 / 3;
-    margin: 0;
-  }
-
-  form {
-    grid-column: 1 / 1;
-    grid-row: 3 / 4;
-    margin: 0;
-    padding-left: 0;
-  }
-
-  footer {
-    grid-column: 1 / 1;
-    grid-row: 4 / 5;
-    margin: 0;
-    max-width: 95vw;
-  }
-
-  /* h2 {
-  } */
-}
+} */
 
 /* --------- mobile ---------  */
 /* @media (max-width: 520px) {
