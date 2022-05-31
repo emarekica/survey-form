@@ -959,9 +959,11 @@ li {
   }
 
   form {
+    justify-content: center;
     margin: 2em 1em 0 1em;
     padding: 0;
-    justify-content: center;
+
+    /* remove this to stop excess grid grow */
     /* grid-row-gap: 0.8em; */
   }
 
@@ -979,8 +981,8 @@ li {
   }
 
   legend {
-    overflow-wrap: break-word;
     font-size: 0.9em;
+    overflow-wrap: break-word;
   }
 
   .name,
@@ -1012,8 +1014,8 @@ li {
   }
 
   .checkboxes {
-    padding-left: 0.5em;
     margin-top: 0.3em;
+    padding-left: 0.5em;
   }
 }
 /* --------- mobile big ---------  */
@@ -1030,8 +1032,8 @@ li {
   }
 
   a.fcc {
-    font-weight: bold;
     font-size: 0.9em;
+    font-weight: bold;
   }
 
   main {
@@ -1041,13 +1043,6 @@ li {
   form {
     display: flex;
     flex-flow: column nowrap;
-  }
-  footer {
-    margin: 0 0.3em 1em 0.3em;
-  }
-
-  div.searchfield {
-    padding: 1em 0 2.5em;
   }
 
   .name,
@@ -1074,19 +1069,23 @@ li {
   }
 
   .submit-buttons {
+    align-self: center;
     flex-flow: row;
     width: 5em;
-    align-self: center;
   }
 
   .form-submit-button,
   .form-reset-button {
-    padding: 1.5em;
     font-size: 0.8em;
+    padding: 1.5em;
+  }
+
+  footer {
+    margin: 0 0.3em 1em 0.3em;
   }
 }
 
-/* --------- mobile ---------  */
+/* --------- mobile small ---------  */
 
 @media (max-width: 350px) {
   body {
@@ -1148,8 +1147,8 @@ li {
   }
 
   footer {
-    text-align: center;
     font-size: 0.8em;
+    text-align: center;
   }
 
   ul {
@@ -1163,7 +1162,8 @@ li {
 
 /* NEXT: 
 
-3. responsiveness: 
+1. refresh color palette in PS
 
-4. SCSS  
+2. SCSS  
+
 */
