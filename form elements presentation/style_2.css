@@ -947,11 +947,8 @@ li {
 @media (max-width: 665px) {
   body {
     display: flex;
-
     flex-flow: column nowrap;
   }
-
-  /* 2em side margins */
 
   h1 {
     font-size: 2.3em;
@@ -965,11 +962,72 @@ li {
     margin: 2em 1em 0 1em;
     padding: 0;
     justify-content: center;
+    /* grid-row-gap: 0.8em; */
   }
+
+  h2 {
+    font-size: 0.9em;
+    overflow-wrap: break-word;
+  }
+
+  h2.searchfield {
+    font-size: 1em;
+  }
+
+  #search-field-button {
+    font-size: 0.8em;
+  }
+
+  legend {
+    overflow-wrap: break-word;
+    font-size: 0.9em;
+  }
+
+  .name,
+  .email,
+  .email-multiple,
+  .password,
+  .search,
+  .text-area,
+  .datepicker,
+  .timepicker,
+  .datetime,
+  .dropdown,
+  .phonenumber,
+  .checkbox,
+  .slider,
+  .minmax,
+  .radio,
+  .color,
+  .url {
+    padding-bottom: 0;
+  }
+
+  legend.check-legend {
+    padding-right: 2em;
+  }
+
+  h2.check-h2 {
+    margin-right: 2em;
+  }
+
+  .checkboxes {
+    padding-left: 0.5em;
+    margin-top: 0.3em;
+  }
+
+  /* footer {
+    transform: translatey(-18em);
+  } */
 }
 
 /* --------- mobile ---------  */
 /* @media (max-width: 520px) {
+
+  form {
+    display: flex;
+    flex-flow: column nowrap;
+  }
 } */
 
 /* ------------------- */
