@@ -51,6 +51,14 @@
 
 <br>
 
+### Excess grid rows
+
+<br>
+
+Don't use `grid-gap` property.
+
+<br><br>
+
 select all divs that are children of fieldset:
 <br>
 
