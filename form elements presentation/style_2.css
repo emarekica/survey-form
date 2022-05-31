@@ -1088,26 +1088,82 @@ li {
 
 /* --------- mobile ---------  */
 
-/* @media (max-width: 520px) {
-
-  form {
-    display: flex;
-    flex-flow: column nowrap;
+@media (max-width: 350px) {
+  body {
+    margin: 1em 1em;
   }
-} */
+
+  header {
+    margin: 1em 0;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  div.search {
+    margin: 0;
+  }
+
+  #search-field,
+  button#search-field-button {
+    width: 100%;
+  }
+
+  form,
+  .name,
+  .email,
+  .email-multiple,
+  .scroll-multiple,
+  .password,
+  .search,
+  .text-area,
+  .datepicker,
+  .timepicker,
+  .datetime,
+  .dropdown,
+  .phonenumber,
+  .checkbox,
+  .slider,
+  .minmax,
+  .radio,
+  .color,
+  .url,
+  .fileupload {
+    margin: 0;
+  }
+
+  .name,
+  .email-multiple,
+  .scroll-multiple {
+    margin-top: 1em;
+  }
+
+  .checkboxes {
+    padding-left: 2em;
+  }
+
+  .drop label {
+    padding: 0.5em 0.5em;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto;
+  }
+}
 
 /* ------------------- */
 
 /* NEXT: 
 
 3. responsiveness: 
-
-max-width: 830px >> smaller h2, wrap it
-max-width: 550px 
-  >> smaller h1, h2, wrap it
-  >> smaller element margins
-  >> smaller div padding
-  >> rearrange elements in the grid to be 2
 
 4. SCSS  
 */
