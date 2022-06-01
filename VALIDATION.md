@@ -24,6 +24,120 @@
 
 <br>
 
+## HTML elements
+
+<br>
+
+Elements marked with \* are subject to validation.
+<br>
+
+- search field ------ `type="search"`
+
+- text input (name) ------ `type="text"` \*
+
+- email (1 input) ------ `type="email"` \*
+
+- email (multiple inputs) \*
+
+- multiple selection scroll ------ `select` + `option` elements
+
+- password ------ `type="password"` \*
+
+- phone number ------ `type="tel"`
+
+- text area ------ `textarea` element
+
+- check boxes ------ `type="checkbox"` \*
+
+- radio button ------ `type="radio"` \*
+
+- time ------ `type="time"`
+
+- date ------ `type="date"`
+
+- date/time ------ `type="datetime-local"`
+
+- drop-down menu ------ `select` + `optgroup` + `option`
+
+- slider ------ `type="range"`
+
+- color selector ------ `type="color"`
+
+- number min/max ------ `type="number"`
+
+- url ------ `type="url"` \*
+
+- file upload ------ `type="file"` \*
+
+- drag ’n’ drop ------ `type="file"` \*
+
+<br><br>
+
+- `input`\*
+
+- `form` \*
+
+- `button` \*
+
+- `type="hidden"` \*
+
+<br><br>
+
+---
+
+## Attributes
+
+<br>
+
+Attributes marked with \* are subject to validation.
+<br>
+
+- `form`
+
+- `accept`
+
+- `autofocus`
+
+- `capture`
+
+- `disable`
+
+- `multiple`
+
+- `name`
+
+- `value`
+
+- `required`
+
+- `minlength`
+
+- `maxlength`
+
+- `type`
+
+- `pattern`
+
+<br><br>
+
+---
+
+## CSS pseudo-elements
+
+<br>
+
+`:invalid`
+
+`:valid`
+
+`:checked`
+
+<br><br>
+
+---
+
+<br>
+
 ## HTML form validation
 
 <br>
@@ -410,7 +524,7 @@ Done via CSS pseudo-classes:
 
 `element.setCustomValidity(message)` method on the following elements:
 
-- `fieldset``
+- `fieldset`
 
 - `input`
 
@@ -449,9 +563,9 @@ The `ValidityState` interface describes the object returned by the `validity` pr
 
 <br>
 
-- [`form`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
+- [form](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
 
--[`input`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+- [input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 
 - [The HTML5 input types (form controls)](https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types)
 
