@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="fep.css" />
+    <title>Form Elements Presentation</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Input Types</h1>
+    </header>
+    <br />
+
+    <main>
+      <!-- search field -->
+      <div class="search">
+        <h2 class="searchfield">Search field</h2>
+
+        <label for="search-field"></label>
+        <input type="search" id="search-field" name="question" />
+        <button id="search-field-button">Search</button>
+      </div>
+      <br />
+
+      <form method="post" enctype="multipart/form-data">
+        <!-- name -->
+        <div class="name">
+          <h2>Text input</h2>
+          <label for="full-name">Full name: </label>
+          <input type="text" id="full-name" placeholder="Jane Doe" required />
+        </div>
+        <br /><br />
+
+        <!-- e-mail -->
+        <div class="email">
+          <h2 class="e-mail">E-mail with one input</h2>
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            pattern=".+@globex\.com"
+            size="30"
+            placeholder="Please, type in your password"
+            required
+          />
+        </div>
+        <br />
+
+        <!-- e-mail, multiple inputs -->
+        <div class="email-multiple">
+          <h2>E-mail with multiple inputs</h2>
+          <label for="emails">Who do you want to email?</label>
+          <input
+            type="email"
+            name="emails"
+            id="emails"
+            name="emails"
+            pattern=".+@globex\.com"
+            placeholder="See your favourite emails list"
+            list="favouriteEmails"
+            size="100"
+          />
+
+          <datalist id="favouriteEmails">
+            <option value="madre@mail.com">Madre</option>
+            <option value="padre@mail.com">Padre</option>
+            <option value="hermana@mail.com">Hermana</option>
+            <option value="abuela@mail.com">Abuela</option>
+            <option value="novio@mail.com">Novio</option>
+          </datalist>
+        </div>
+        <br />
+
+        <!-- scrol with multiple  -->
+        <div class="scroll-multiple">
+          <h2>Scroll with multiple selection</h2>
+          <label>Choose a family member for ICE number:</label>
+          <select multiple name="mifamilia" id="familia">
+            <option>Madre</option>
+            <option>Padre</option>
+            <option>Hermana</option>
+            <option>Abuela</option>
+            <option>Novio</option>
+          </select>
+        </div>
+        <br /><br />
+
+        <!-- password -->
+        <div class="password">
+          <h2>Password</h2>
+          <label class="pass" for="pass">Enter your password:</label>
+          <input
+            type="password"
+            id="pass"
+            name="password"
+            minlength="8"
+            maxlength="20"
+            placeholder="Please, enter your password"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
+            required
+          />
+        </div>
+        <br /><br />
+
+        <!-- text area -->
+        <!-- inputs with top-aligned labels -->
+        <div class="text-area">
+          <h2>Text area</h2>
+          <label for="your-story"
+            >We are interested in your story, tell us!</label
+          >
+          <br />
+          <textarea
+            id="your-input"
+            name="story"
+            rows="10"
+            columns="10"
+            placeholder="Write your story here."
+          ></textarea>
+          <br />
+
+          <!-- inputs with floating labels -->
+          <br />
+          -->
+        </div>
+        <br /><br />
+
+        <!-- date picker -->
+        <div class="datepicker">
+          <h2 class="date-picker">Date picker</h2>
+          <label for="date-picker"></label>
+          <input
+            type="date"
+            id="date-picker"
+            name="trip-start"
+            value="2020-01-01"
+            max="2100-01-01"
+          />
+          <br />
+        </div>
+        <br /><br />
+
+        <!-- time picker -->
+        <div class="timepicker">
+          <h2>Time picker</h2>
+          <label for="start-time-picker">Pick start time:</label>
+          <input
+            type="time"
+            id="start-time-picker"
+            name="time"
+            min="00:00"
+            max="23:59"
+          />
+          <br /><br />
+
+          <label for="end-time-picker">Pick end time:</label>
+          <input
+            type="time"
+            id="end-time-picker"
+            name="time"
+            min="00:00"
+            max="23:59"
+          />
+          <br />
+        </div>
+        <br /><br />
+
+        <!-- datetime-local picker -->
+        <div class="datetime">
+          <h2>Date/time picker</h2>
+          <label for="datetime-local-picker"></label>
+          <input
+            type="datetime-local"
+            id="datetime-local-picker"
+            name="datetime-picker"
+            min="1999-01-01T00:00"
+            max="2022-06-05T23:59"
+            required
+          />
+          <br />
+        </div>
+        <br /><br />
+
+        <!-- drop-down -->
+        <div class="dropdown">
+          <h2>Drop-down menu</h2>
+          <label for="dropdown"></label>
+          <select id="dropdown" name="groups">
+            <optgroup label="seasons">
+              <option value="spring">spring</option>
+              <option value="summer">summer</option>
+              <option value="autumn">autumn</option>
+              <option value="winter">winter</option>
+            </optgroup>
+            <optgroup label="locations">
+              <option>Carrot</option>
+              <option>Eggplant</option>
+              <option>Potato</option>
+            </optgroup>
+          </select>
+          <br />
+        </div>
+        <br /><br />
+
+        <!-- phone number field -->
+        <div class="phonenumber">
+          <h2>Phone number</h2>
+          <label for="phone">Please, enter your number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+          />
+          <br />
+          <small>Format: 123-456-7890</small>
+          <br /><br />
+        </div>
+        <br /><br />
+
+        <!-- check-box -->
+        <!-- multi-select input -->
+
+        <div class="checkbox">
+          <h2 class="check-h2">Check-box</h2>
+          <fieldset>
+            <legend class="check-legend">
+              Select your 3 prefered colors/shade
+            </legend>
+
+            <div class="checkboxes">
+              <input
+                type="checkbox"
+                id="blue"
+                value="blue"
+                name="blue"
+                class="check-input"
+              />
+              <label for="blue" class="check-label">
+                <svg viewBox="0 0 22 16" fill="none">
+                  <path d="M1 6.85L8.09677 14L21 1" />
+                </svg>
+              </label>
+              <span>blue</span>
+
+              <input
+                type="checkbox"
+                id="green"
+                value="green"
+                name="green"
+                class="check-input"
+              />
+              <label for="green" class="check-label">
+                <svg viewBox="0 0 22 16" fill="none">
+                  <path d="M1 6.85L8.09677 14L21 1" />
+                </svg>
+              </label>
+              <span>green</span>
+
+              <input
+                type="checkbox"
+                id="yellow"
+                value="yellow"
+                name="yellow"
+                class="check-input"
+              />
+              <label for="yellow" class="check-label">
+                <svg viewBox="0 0 22 16" fill="none">
+                  <path d="M1 6.85L8.09677 14L21 1" />
+                </svg>
+              </label>
+              <span>yellow</span>
+
+              <input
+                type="checkbox"
+                id="orange"
+                value="orange"
+                name="orange"
+                class="check-input"
+              />
+              <label for="orange" class="check-label">
+                <svg viewBox="0 0 22 16" fill="none">
+                  <path d="M1 6.85L8.09677 14L21 1" />
+                </svg>
+              </label>
+              <span>orange</span>
+
+              <input
+                type="checkbox"
+                id="red"
+                value="red"
+                name="red"
+                class="check-input"
+              />
+              <label for="red" class="check-label">
+                <svg viewBox="0 0 22 16" fill="none">
+                  <path d="M1 6.85L8.09677 14L21 1" />
+                </svg>
+              </label>
+              <span>red</span>
+
+              <input
+                type="checkbox"
+                id="violet"
+                value="violet"
+                name="violet"
+                class="check-input"
+              />
+              <label for="violet" class="check-label">
+                <svg viewBox="0 0 22 16" fill="none">
+                  <path d="M1 6.85L8.09677 14L21 1" />
+                </svg>
+              </label>
+              <span>violet</span>
+
+              <input
+                type="checkbox"
+                id="brown"
+                value="brown"
+                name="brown"
+                class="check-input"
+              />
+              <label for="brown" class="check-label">
+                <svg viewBox="0 0 22 16" fill="none">
+                  <path d="M1 6.85L8.09677 14L21 1" />
+                </svg>
+              </label>
+              <span>brown</span>
+
+              <input
+                type="checkbox"
+                id="black"
+                value="black"
+                name="black"
+                class="check-input"
+              />
+              <label for="black" class="check-label">
+                <svg viewBox="0 0 22 16" fill="none">
+                  <path d="M1 6.85L8.09677 14L21 1" />
+                </svg>
+              </label>
+              <span>black</span>
+
+              <input
+                type="checkbox"
+                id="white"
+                value="white"
+                name="white"
+                class="check-input"
+              />
+              <label for="white" class="check-label">
+                <svg viewBox="0 0 22 16" fill="none">
+                  <path d="M1 6.85L8.09677 14L21 1" />
+                </svg>
+              </label>
+              <span>white</span>
+            </div>
+          </fieldset>
+          <br />
+        </div>
+        <br /><br />
+
+        <!-- radio-button -->
+        <div class="radio">
+          <h2>Radio button</h2>
+
+          <fieldset id="radio">
+            <legend>Select your morning favourite drink:</legend>
+
+            <div class="radiobuttons">
+              <span>coffee</span>
+              <input
+                type="radio"
+                id="coffee"
+                value=""
+                name="drink"
+                class="radio-input"
+                checked
+              />
+              <label for="coffee" class="radio-label"></label>
+
+              <span>tea</span>
+              <input
+                type="radio"
+                id="tea"
+                value="tea"
+                name="drink"
+                class="radio-input"
+              />
+              <label for="tea" class="radio-label"></label>
+
+              <span>lemon-water</span>
+              <input
+                type="radio"
+                id="lemon-water"
+                value="lemonwater"
+                name="drink"
+                class="radio-input"
+              />
+              <label for="lemon-water" class="radio-label"></label>
+
+              <span>none</span>
+              <input
+                type="radio"
+                id="none"
+                value="none"
+                name="drink"
+                class="radio-input"
+              />
+              <label for="none" class="radio-label"></label>
+            </div>
+          </fieldset>
+        </div>
+        <br /><br />
+
+        <!-- input with stepper -->
+        <!-- slider -->
+        <div class="slider">
+          <h2>Input with stepper/Slider</h2>
+          <div>
+            <label for="volume">Volume: </label>
+            <br />
+            <input
+              type="range"
+              id="volume"
+              name="volume"
+              min="0"
+              max="11"
+              step="2"
+            />
+          </div>
+          <br />
+        </div>
+        <br /><br />
+
+        <!-- number input -->
+        <!-- min/max -->
+        <div class="minmax">
+          <h2>Number min/max</h2>
+          <label for="age" id="number-label">Age(optional):</label>
+          <input
+            type="number"
+            id="age"
+            min="1"
+            max="120"
+            name="age"
+            placeholder="Please, write a number."
+          />
+          <br />
+        </div>
+        <br /><br />
+
+        <!-- color selector -->
+        <div class="color">
+          <h2>Color selector</h2>
+          <label>Select your main theme colors:</label>
+
+          <div class="pick-color">
+            <label for="background"> background</label>
+            <input
+              type="color"
+              id="background"
+              name="theme-color"
+              value="background"
+              required
+            />
+          </div>
+
+          <div class="pick-fonts">
+            <label for="fonts"> fonts</label>
+            <input
+              type="color"
+              id="fonts"
+              name="theme-color"
+              value="fonts"
+              required
+            />
+          </div>
+
+          <div class="pick-border">
+            <label for="border"> border</label>
+            <input
+              type="color"
+              id="border"
+              name="theme-color"
+              value="border"
+              required
+            />
+          </div>
+          <br />
+        </div>
+        <br /><br />
+
+        <!-- URL -->
+        <div class="url">
+          <h2>URL</h2>
+          <label for="url">Enter an https:// URL:</label>
+
+          <input
+            type="url"
+            name="url"
+            id="url"
+            placeholder="https://example.com"
+            pattern="https://.*"
+            size="30"
+            required
+          />
+        </div>
+        <br /><br /><br />
+
+        <!-- FILE UPLOAD / File picker -->
+        <div class="fileupload">
+          <h2>File upload / File picker</h2>
+          <p>
+            <label for="imgupload">Chose your profile image:</label>
+            <input
+              type="file"
+              id="imgupload"
+              name="upload"
+              accept=".jpg, .jpeg, .png, .svg, .gif"
+            />
+          </p>
+          <br />
+
+          <p>
+            <label for="textupload">Pick a text file to upload:</label>
+            <input
+              type="file"
+              id="textupload"
+              name="text"
+              accept=".text, .pdf, .doc, .docx"
+              multiple
+            />
+          </p>
+          <br />
+
+          <!-- drag & drop -->
+
+          <div class="drop-container">
+            <div class="drop">
+              <span class="text">Drag 'n' drop</span>
+
+              <div class="or-con">
+                <span class="or">OR</span>
+              </div>
+
+              <label for="file-upload">Browse Files</label>
+              <input type="file" id="file-upload" class="file-input" multiple />
+            </div>
+
+            <div class="progress"></div>
+          </div>
+        </div>
+        <br /><br />
+
+        <div class="submit-buttons">
+          <button class="form-submit-button">SUBMIT</button>
+          <button class="form-reset-button" type="reset">RESET</button>
+        </div>
+      </form>
+
+      <br /><br />
+    </main>
+    <br />
+
+    <footer>
+      <p>
+        Made for
+        <a href="http://learn.freecodecamp.org" class="fcc">freeCodeCamp</a> by
+        emarekica
+      </p>
+
+      <!-- GitHub -->
+      <ul id="social">
+        <img
+          src="../media/logo/github-logo.png"
+          alt="Github logo"
+          class="logo"
+        />
+        <li>
+          <a href="https://github.com/emarekica" title="GitHub">GitHub</a>
+        </li>
+
+        <!-- LinkedIn -->
+        <img
+          src="../media/logo/linkedin-logo.png"
+          alt="Linkedin logo"
+          class="logo"
+        />
+        <li>
+          <a
+            href="https://www.linkedin.com/in/marija-ercegovac-93829032"
+            title="LinkedIn"
+            ><i class="fab fa-linkedin"></i>LinkedIn</a
+          >
+        </li>
+
+        <!-- Behance -->
+        <img
+          src="../media/logo/behance-logo.png"
+          alt="Behance logo"
+          class="logo"
+        />
+        <li>
+          <a href="https://www.behance.net/emarekica" title="Behance"
+            >Behance</a
+          >
+        </li>
+
+        <!-- 500px -->
+        <img
+          src="../media/logo/500px-logo-2.png"
+          alt="500px logo"
+          class="logo"
+        />
+        <li>
+          <a href="https://500px.com/p/emarekica?view=photos" title="500px"
+            >500px</a
+          >
+        </li>
+      </ul>
+    </footer>
+
+    <script src="fep.js"></script>
+  </body>
+</html>
