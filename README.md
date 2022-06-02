@@ -63,6 +63,10 @@ https://user-images.githubusercontent.com/77061620/171374684-8a053dba-eea8-4d36-
 
 ## Try it!
 
+<br>
+
+[See the page and try changing the screen size to see the responsiveness.](https://emarekica.github.io/survey-form/)
+
 <br><br>
 
 ---
