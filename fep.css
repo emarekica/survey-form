@@ -164,7 +164,7 @@ body {
   min-height: 90vh;
 
   background-attachment: fixed;
-  background-image: url(../media/background.png);
+  background-image: url(media/background.png);
   /* background-image: url(https://images.unsplash.com/photo-1604339454409-701c5278c546?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z3JhZGllbnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60); */
   background-repeat: no-repeat;
   background-size: 100% 100%;
