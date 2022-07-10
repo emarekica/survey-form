@@ -1,28 +1,70 @@
-/* 
-COLOR THEME:
+// variables
 
--- gray:
+$white: #fff;
+$light-transp: #ffffffb0;
+$light-transp-gray: #e3e8f22e;
+$light-transp-gray-2: #d9d9d94d;
+$light-gray: #b7b6b6;
+$middle-gray: #556273;
+$darker-gray: #3b4859;
+$reddish-gray: #ffe1e08b;
+$dark-reddish-gray: #feebea8b;
+$bluish-gray: #333b4c2e;
+$dark-bluish-gray: #32325d40;
+$almost-black: #0000004d;
+$turq-gray: #a8c9cd;
+$transparent-black: #00000030;
+$transparent-black-2: #0000003b;
+$transparent-gray: #68676740;
+$transparent-gray-2: #c4c4c44d;
+$transparent-gray-3: #bbbbbb40;
+$transparent-gray-4: #dedede58;
+$transparent-gray-5: #c2c2c258;
+$light-pink: #facfce;
+$middle-pink: #f9bebd;
+$light-turq: #c8eaed;
+$middle-turq: #a8c9cd;
+$dark-turq: #7d999c;
 
-#D9D7D8
-#D0CECF
-#98A0A6
-#6F7985
-#556273
-#3B4859
+$blue-linear-gradient: linear-gradient(#22405d, 80%, #435b6ac4);
 
-h1: #f9bebd
-h2: #facfce
-p: #c8eaed
+$fonts: "Maven Pro", sans-serif;
 
-*/
+// mixins
+
+@mixin darkBoxShadow {
+  box-shadow: $transparent-black 0px 5px 10px, $transparent-black-2 0px 3px 6px;
+}
+
+@mixin lightBoxShadow {
+  box-shadow: $transparent-gray 0px 13px 27px -5px,
+    $transparent-gray-2 0px 8px 16px -8px;
+}
+
+@mixin lightBoxShadow2 {
+  box-shadow: $transparent-gray-3 2px 8px 27px 5px,
+    $transparent-gray-4 2px 8px 16px -8px;
+}
+
+@mixin buttonFocusBoxShadow {
+  box-shadow: $dark-bluish-gray 0px 30px 60px -12px inset,
+    $almost-black 0px 18px 36px -18px inset;
+}
+
+@mixin textShadow {
+  text-shadow: 45px 10px 80px $light-gray, -45px -10px 80px $white;
+}
+
+@mixin dropContainerBoxShadow {
+  box-shadow: $transparent-gray-3 2px 8px 27px 5px,
+    $transparent-gray-5 2px 8px 16px -8px;
+}
 
 /* --- CSS Reset --- */
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -147,7 +189,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-*/
 
 /* --- GENERAL --- */
 
@@ -160,17 +201,16 @@ body {
   display: flex;
 
   flex-direction: column;
-  /* margin: 0 3em 2em 3em; */
   min-height: 90vh;
 
   background-attachment: fixed;
-  background-image: url(media/background.png);
+  background-image: url(../media/background.png);
   /* background-image: url(https://images.unsplash.com/photo-1604339454409-701c5278c546?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z3JhZGllbnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60); */
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
-  color: #c8eaed;
-  font-family: "Maven Pro", sans-serif;
+  color: $light-turq;
+  font-family: $fonts;
 }
 
 header {
@@ -180,18 +220,18 @@ header {
   margin: 4em 2em 1em 2em;
   padding: 5em 2em;
 
-  background-color: #333b4c2e;
+  background-color: $bluish-gray;
   border-radius: 2em;
-  box-shadow: #68676740 0px 13px 27px -5px, #c4c4c44d 0px 8px 16px -8px;
+  @include lightBoxShadow;
 }
 
 h1 {
-  color: #f9bebd;
+  color: $middle-pink;
   font-size: 3em;
   font-weight: bolder;
   letter-spacing: 0.3em;
   /* x, y, blur radius, color */
-  text-shadow: 45px 10px 80px #b7b6b6, -45px -10px 80px #ffffff;
+  @include textShadow;
   text-transform: uppercase;
 }
 
@@ -199,7 +239,7 @@ h2 {
   margin: 1em 0 2em 0;
   width: 100%;
 
-  color: #facfce;
+  color: $light-pink;
   font-weight: bold;
   letter-spacing: 0.2em;
   line-height: 1.3em;
@@ -251,16 +291,15 @@ div {
   background: transparent;
   border: none;
   /* background-color: rgba(51, 59, 76, 0.179); */
-  box-shadow: #bbbbbb40 2px 8px 27px 5px, #dedede58 2px 8px 16px -8px;
+  @include lightBoxShadow2;
 
   color: #fff;
   text-transform: uppercase;
 }
 
 #search-field-button:focus {
-  background: #556273;
-  box-shadow: #32325d40 0px 30px 60px -12px inset,
-    #0000004d 0px 18px 36px -18px inset;
+  background: $middle-gray;
+  @include buttonFocusBoxShadow;
 }
 
 #search-field-button::after #background,
@@ -383,7 +422,7 @@ textarea:focus {
   outline: 2px solid #a1c9cd88;
 
   color: #fff;
-  font-family: "Maven Pro", sans-serif;
+  font-family: $fonts;
 }
 
 #your-input {
@@ -398,8 +437,8 @@ textarea:focus {
   background: transparent;
   border-radius: 0.5em;
 
-  color: #7d999c;
-  font-family: "Maven Pro", sans-serif;
+  color: $dark-turq;
+  font-family: $fonts;
 }
 
 /* --- phone number --- */
@@ -426,7 +465,7 @@ label[for="white"] {
   margin-bottom: 1em;
   padding: 0.15em;
 
-  accent-color: #556273;
+  accent-color: $middle-gray;
 }
 
 .checkboxes {
@@ -458,7 +497,7 @@ label[for="white"] {
   top: 0.3em;
   width: 15px;
 
-  box-shadow: #00000030 0px 5px 10px, #0000003b 0px 3px 6px;
+  @include darkBoxShadow;
 }
 
 span {
@@ -515,7 +554,7 @@ span {
   display: flex;
 
   align-items: center;
-  border: 2px solid #c8eaed;
+  border: 2px solid $light-turq;
   border-radius: 50%;
   cursor: pointer;
   height: 17px;
@@ -526,7 +565,7 @@ span {
   width: 17px;
 
   background: transparent;
-  box-shadow: #00000030 0px 5px 10px, #0000003b 0px 3px 6px;
+  @include darkBoxShadow;
 }
 
 .radio-label::before,
@@ -542,7 +581,7 @@ span {
 }
 
 .radio-label::before {
-  background: #c8eaed;
+  background: $light-turq;
 
   height: 10px;
   width: 10px;
@@ -551,7 +590,7 @@ span {
   height: 25px;
   width: 25px;
 
-  background: #c8eaed;
+  background: $light-turq;
 }
 
 .radio-input:checked + .radio-label::before {
@@ -568,7 +607,7 @@ input#coffee,
 input#tea,
 input#lemon-water,
 input#none {
-  accent-color: #556273;
+  accent-color: $middle-gray;
   margin: 0;
 }
 
@@ -623,11 +662,11 @@ input[type="file"] {
   padding: 1.5rem;
   width: 83%;
 
-  background: #ffe1e08b;
-  box-shadow: #bbbbbb40 2px 8px 27px 5px, #c2c2c258 2px 8px 16px -8px;
+  background: $reddish-gray;
+  @include dropContainerBoxShadow;
   border-radius: 0.5em;
 
-  color: #3b4859;
+  color: $darker-gray;
   line-height: 1.5em;
 }
 
@@ -640,20 +679,20 @@ input[type="file"] {
   place-items: center;
   width: 100%;
 
-  border: 0.5px dashed #ffffffb0;
+  border: 0.5px dashed $light-transp;
   border-radius: 0.5em;
 }
 
 .active {
   background: #feebea8b;
-  border: 0.5px dashed #ffffffb0;
+  border: 0.5px dashed $light-transp;
 }
 
 .drop .text {
   margin-top: 1rem;
   padding-left: 2em;
 
-  color: #3b4859;
+  color: $darker-gray;
   font-weight: bold;
   letter-spacing: 0.2em;
   text-align: center;
@@ -680,11 +719,11 @@ input[type="file"] {
   padding: 1em 1em;
   width: 90%;
 
-  background: #ffe1e08b;
-  border: 1px solid #d9d9d94d;
+  background: $reddish-gray;
+  border: 1px solid $light-transp-gray-2;
   border-radius: 0.5em;
 
-  color: #fff;
+  color: $white;
   letter-spacing: 0.1em;
   text-align: center;
   cursor: pointer;
@@ -717,7 +756,7 @@ input[type="file"] {
   margin: 1em 1em;
   padding: 1em 5em;
 
-  color: #a8c9cd;
+  color: $middle-turq;
   text-transform: full-width;
 }
 
@@ -726,11 +765,11 @@ input[type="file"] {
   padding: 2em 1em;
   width: 15em;
 
-  background: linear-gradient(#22405d, 80%, #435b6ac4);
+  background: $blue-linear-gradient;
   border: none;
   box-shadow: #68676740 0px -8px 27px 5px, #c4c4c44d 0px 8px 8px -8px;
 
-  color: #fff;
+  color: $white;
   font-size: 0.9em;
   letter-spacing: 0.3em;
 }
@@ -739,13 +778,13 @@ input[type="file"] {
   padding: 2em 1em;
   width: 15em;
 
-  background: linear-gradient(#22405d, 80%, #435b6ac4);
+  background: $blue-linear-gradient;
   border: none;
   /* box-shadow: rgb(50 50 105 / 15%) 0px 2px 5px 0px,
     rgb(0 0 0 / 5%) 0px 1px 1px 0px; */
-  box-shadow: #68676740 0px -8px 27px 5px, #c4c4c44d 0px 8px 8px -8px;
+  @include lightBoxShadow;
 
-  color: #fff;
+  color: $white;
   font-size: 0.9em;
   letter-spacing: 0.3em;
 }
@@ -773,9 +812,9 @@ input[type="file"] {
 .fileupload {
   padding: 2em 2em;
 
-  background-color: #e3e8f22e;
+  background-color: $light-transp-gray;
+  @include lightBoxShadow;
   border-radius: 0.5em;
-  box-shadow: #68676740 0px 13px 27px -5px, #c4c4c44d 0px 8px 16px -8px;
   /* margin: 0.2em 0.2em; */
 }
 
@@ -892,9 +931,11 @@ footer {
   /* background-color: rgb(112 129 140 / 40%);
   box-shadow: rgb(17 12 46 / 15%) 0px 48px 100px 0px; */
 
-  background-color: #333b4c2e;
+  background-color: $bluish-gray;
   border-radius: 2em;
-  box-shadow: #68676740 0px -16px 27px 5px, #c4c4c44d 0px 8px 16px -8px;
+
+  box-shadow: $transparent-gray 0px -16px 27px 5px,
+    $transparent-gray-2 0px 8px 16px -8px;
   /* rgb(104 103 103 / 25%) 0px -13px 27px 5px;
      */
 
@@ -909,7 +950,7 @@ footer > p {
 }
 
 a {
-  color: #a8c9cd;
+  color: $turq-gray;
   font-size: 0.9em;
   font-weight: bold;
   text-decoration: none;
@@ -933,7 +974,9 @@ li {
   max-width: 1.7em;
   max-height: 1.7em;
 }
+
 /* --- RESPONSIVENESS --- */
+
 /* --------- tablet ---------  */
 
 @media (max-width: 665px) {
@@ -1150,12 +1193,4 @@ li {
   }
 }
 
-/* ------------------- */
-
-/* NEXT: 
-
-1. refresh color palette in PS
-
-2. SCSS  
-
-*/
+// see if box-shadow mixin can accept background
