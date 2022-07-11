@@ -14,6 +14,8 @@ This exercise is part of series of projects from [Responsive web design course](
 
 - CSS3
 
+- SCSS
+
 - JavaScript
 
 <br><br>
@@ -34,14 +36,6 @@ This exercise is part of series of projects from [Responsive web design course](
 
 - applied accessibility
 - applied visual design
-
-<br><br>
-
----
-
-## Improvement ideas
-
-<br>
 
 <br><br>
 
