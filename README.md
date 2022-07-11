@@ -71,21 +71,6 @@ https://user-images.githubusercontent.com/77061620/171374684-8a053dba-eea8-4d36-
 
 ---
 
-### Resources:
-
-<br>
-
-**Inspo**:
-
-- [modern](https://www.uidesigndaily.com/posts/studio-form-input-dark-theme-day-1432)
-- [retro](https://www.behance.net/gallery/100413829/The-Library-Card-Project?tracking_source=search_projects_recommended%7Cretro%20paper)
-- [backgrounds](https://www.behance.net/gallery/11095429/Retro-Backgrounds?tracking_source=search_projects_recommended%7Cretro%20paper)
-  <br><br>
-
-See `img` folder.
-
----
-
 ### Licence
 
 [MIT](https://choosealicense.com/licenses/mit/)
