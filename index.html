@@ -40,7 +40,13 @@
         <div class="name">
           <h2>Text input</h2>
           <label for="full-name">Full name: </label>
-          <input type="text" id="full-name" placeholder="Jane Doe" required />
+          <input
+            type="text"
+            id="full-name"
+            pattern="((\s*)[\S]+(\s*))+"
+            placeholder="Jane Doe"
+            required
+          />
         </div>
         <br /><br />
 
@@ -51,7 +57,7 @@
           <input
             type="email"
             id="email"
-            pattern=".+@globex\.com"
+            pattern="[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+"
             size="30"
             placeholder="Please, type in your e-mail"
             required
